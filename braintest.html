@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>erica wong's portfolio</title>
+
+        <link rel="stylesheet" href="css/app.css">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+           $(document).ready(function()
+            {
+                $(".gif").hover(
+                    function()
+                    {
+                      var src = $(this).attr("src");
+                      $(this).attr("src", src.replace(/\.jpg/i, ".gif"));
+                    },
+                    function()
+                    {
+                      var src = $(this).attr("src");
+                      $(this).attr("src", src.replace(/\.gif$/i, ".jpg"));
+                    });
+            });
+        </script>
+    </head>
+    <body>
+        
+        <section id="top-nav" class="grid-container grid-x">
+            <div class="columns small-12 medium-12 large-12">
+                <ul class="menu">
+                    <li><a href="index.html" target="_parent">Work</a></li>
+                    <li><a href="https://www.linkedin.com/in/ericawywong/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/wingyii.e/" target="_blank">Instagram</a></li>
+                    <li><a href="mailto:wingyii.e@gmail.com">Email</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <div id="braintest">
+            <section id="header-container">
+                <div class="header grid-container grid-x">
+                    <div class="columns small-12 medium-12 large-12">
+                        <h1>BrainTest</h1>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="project-container">
+                <div class="project-detail grid-container grid-x">
+                    <div class="columns small-12 medium-12 large-12">
+                        <h2>A clinically proven application for screening early stages of Alzheimer's</h2>
+                        <p>Alzheimer’s is a chronic ongoing condition. It is an untreatable condition that will negatively affect memory, thinking, and behavior. Based on research, it mostly affects those who are aged 65 and over. Yet, there are also signs that show Alzheimer’s symptoms are showing at an earlier age. BrainTest is able to help and support doctors to identify any Alzheimer’s symptoms at their onset.</p>
+                        <h2>Gain peace of mind</h2>
+                        <p>Alzheimer's is a progressive disease. At the beginning, there might not be obvious symptoms or symptoms might be very minimal. For those who suspect your close ones might be diagnosed with Alzheimer's, you can have access to the test and gain peace of mind.</p>
+                    </div>
+                </div>
+                
+                <div class="grid-container grid-x">
+                    <div class="columns small-12 medium-12 large-12">
+                        <video width="100%" height="auto" controls>
+                          <source src="images/braintest/braintest-signup-login.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                
+                <div class="project-detail grid-container grid-x">
+                    <div class="columns small-12 medium-12 large-12">
+                    <h2>For this project</h2>
+                    <div class="columns small-12 medium-8 large-8 grid-margin-x">
+                        <p>I was responsible for creating high-fidelity mockups for android, iOS and web. To help developers better understand the design, I also created prototypes that help demonstrate screen transition and micro animations to create a more immersive and polished experience for users. I supported the marketing team with content by creating motion graphics and onboarding videos.</p>
+                    </div>
+                    <div class="columns small-12 medium-4 large-4 remove-left-padding">
+                        <ul class="role">
+                            <li>UI Design</li>
+                            <li>Responsive Web</li>
+                            <li>Multi platform (iOS, Android, BlackBerry)</li>
+                            <li>Prototype</li>
+                            <li>Video editing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="columns small-12 medium-4 large-4">
+                        <ul class="app-link">
+                            <li><a href="https://braintest.com/" target="_blank">Web</a></li>
+                            <li><a href="https://itunes.apple.com/ca/app/braintest/id1030864182?mt=8" target="_blank">Apple store</a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.braintest.app" target="_blank">Google play store</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-detail grid-container grid-x">
+                    <div class="columns small-12 medium-12 large-12">
+                        <h2>Interactive Guide</h2>
+                        <p>The Interactive Guide is an educational information piece to help users and their family members to learn more about Alzheimer’s and the ways to help prevent it. To make it more interesting, we decided to make it more colorful and interesting by creating illustrations and animations.</p>
+                    </div>
+                </div>
+                
+                <div class="images-container grid-container grid-x">
+                    <div class="columns small-12 medium-6 large-6">
+                        <img src="images/braintest/interactive-guide/bt-interactive-guide-0.jpg">
+                    </div>
+                    <div class="columns small-12 medium-6 large-6">
+                        <img src="images/braintest/interactive-guide/bt-interactive-guide-1.1.0.jpg">
+                    </div>
+                    <div class="columns small-12 medium-6 large-6">
+                        <img class="gif" src="images/braintest/interactive-guide/bt-interactive-guide-1.2.0.jpg">
+                    </div>
+                    <div class="columns small-12 medium-6 large-6">
+                        <img class="gif" src="images/braintest/interactive-guide/bt-interactive-guide-APOE.jpg">
+                    </div>
+                </div>
+            
+            </section>
+        </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/min/app-min.js"></script>
+    </body>
+</html>
