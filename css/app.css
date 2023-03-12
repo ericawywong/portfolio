@@ -5523,7 +5523,7 @@ h1 {
     margin-left: 0; }
 
 a {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 85%;
   font-weight: 800;
   display: block; }
