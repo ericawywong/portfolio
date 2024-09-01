@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const navHTML = `
     <nav>
         <div class="nav-container">
-            <div class="icon logo"><h2>Erica Wong</h2></div> 
+            <div class="icon logo"></div>
+            <h2>Erica Wong</h2>
         </div>
         <div class="nav-container">
             <ul>

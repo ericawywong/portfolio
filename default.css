@@ -283,9 +283,25 @@ a {
   font-weight: 600;
   text-decoration: none;
   padding: 0.111rem 0.5rem;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
   p {
     font-weight: 300;
   }
+}
+
+a:hover {
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  background-color: var(--primary100);
+  box-shadow: 0.444rem 0.444rem 0 var(--primary120);
+  border-radius: 2rem;
 }
 
 img {
@@ -298,7 +314,11 @@ img {
   justify-content: center;
   align-items: stretch;
   object-fit: cover;
-  background-color: unset;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
 
 img:hover {
@@ -307,7 +327,12 @@ img:hover {
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
-  box-shadow: 0.444rem 0.444rem 0 var(--primary100);
+  box-shadow: 0.888rem 0.888rem 0 var(--grey20);
+}
+
+.no-hover-effect:hover {
+  box-shadow: none;
+  background-color: unset;
 }
 
 h1, h2, h3 {

@@ -46,7 +46,7 @@ nav {
         display: inline-block;
       }
     
-      a:hover {
+      /* a:hover {
         background-color:var(--primary100);
         border-radius: 1.389rem;
         -o-transition:.5s;
@@ -55,7 +55,7 @@ nav {
         -webkit-transition:.5s;
         transition:.5s;
         box-shadow: 0.111rem 0.222rem 0 var(--primary120);
-      }
+      } */
       
       ul {
         margin: 0;
@@ -65,7 +65,7 @@ nav {
       }
       
       ul li {
-        margin-right: 1.111rem;
+        margin-right: 0.85rem;
       }
       
       ul li:last-child {
@@ -85,12 +85,16 @@ nav {
         background: url(ericawong.svg);
         background-repeat: no-repeat;
         background-position: left;
-        background-size: 16%;
+        background-size: 78%;
         text-align: center;
         border-radius: 0;
         margin-bottom: 0;
         width:fit-content;
-        padding-left:2.5rem;
+        padding-left:4rem;
+      }
+
+      .logo:hover {
+        box-shadow: none;
       }
     }
 
@@ -175,7 +179,7 @@ ul.icon {
   /* transition: filter 0.3s ease-in-out; */
 }
 
-.icon:hover {
+/* .icon:hover {
     background-color:var(--primary100);
     border-radius: 2.778rem;
     stroke: var(--white100);
@@ -186,24 +190,21 @@ ul.icon {
     transition:.5s;
     box-shadow: 0.222rem 0.222rem 0 var(--primary120);
     padding:0;
-}
+} */
 
 .email {
   background-image: url(email.svg);
   background-size: 64% 64%;
-  margin-left: 0.444rem;
 }
 
 .instagram {
   background-image: url(instagram.svg);
   background-size: 58% 58%;
-  margin-left: 0.444rem;
 }
 
 .home {
   background-image: url(home.svg);
   background-size: 72% 72%;
-  margin-left: 0.444rem;
 }
 
 .blastr {
@@ -274,16 +275,11 @@ ul.icon {
       box-shadow: unset;
     }
   }
-  
 }
 
 /* Media Queries */
 
 @media (max-width: 991px) { /*L*/
-  .email,
-  .instagram {
-    display: none;
-  }
   /* nav ul {
       display: none;
       flex-direction: column;
@@ -310,6 +306,14 @@ ul.icon {
 }
 
 @media (max-width: 666px) { /*S*/
+
+  nav {
+    .nav-container {
+      h2 {
+        display: none;
+      }
+    }
+  }
 }
 
 
