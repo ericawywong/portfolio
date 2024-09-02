@@ -348,6 +348,9 @@ p {
 
 ul {
   padding-left:1rem;
+  li {
+    margin-bottom:0.5rem;
+  }
 }
 
 p:last-child,
@@ -386,6 +389,10 @@ li:last-child {
   background-color: var(--primary100);
   padding: 0.111rem 0.778rem;
   border-radius: 1.389rem;
+  white-space: nowrap;
+}
+
+.nowarp {
   white-space: nowrap;
 }
 
