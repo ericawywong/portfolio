@@ -45,7 +45,7 @@
             <div class="intro flipper">
                 <div class="front intro-details">
                     <p class="xlarge xbold">I'm Erica Wong, <br>a UX/UI designer.</p>
-                    <p class="large">I craft journeys for humans with <span class="highlight bold">colorful pixels 🌈</span> and <span class="highlight bold">empathy 🙂 😡 😢 😃</span>.</p>
+                    <p class="large">I craft journeys for humans with <span class="highlight bold">colorful pixels <canvas id="rainbow" style="width: 32px; height: 32px; vertical-align: text-top;"></canvas></span> and <span class="highlight bold">empathy 😃 😢</span>.</p>
                     <!-- <button class="button">+</button> -->
                 </div>
                 <!-- <div class="back intro-details">
@@ -136,5 +136,23 @@
 
     <script src="script.js"></script>
     <script src="footer.js"></script>
+
+<script src="https://unpkg.com/@rive-app/canvas"></script>
+<script src="https://unpkg.com/@rive-app/canvas@2.24.0"></script>
+
+<script>
+    const r = new rive.Rive({
+        src: "index.riv",
+        // OR the path to a discoverable and public Rive asset
+        // src: '/public/example.riv',
+        canvas: document.getElementById("rainbow"),
+        autoplay: true,
+        // artboard: "Arboard", // Optional. If not supplied the default is selected
+        stateMachines: "State Machine 1",
+        onLoad: () => {
+          r.resizeDrawingSurfaceToCanvas();
+        },
+    });
+</script>
 </body>
 </html>
