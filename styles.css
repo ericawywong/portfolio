@@ -31,7 +31,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 6px solid var(--primary100);
+  /* border-bottom: 6px solid var(--primary100); */
   position: sticky;
   top: 0;
   width: 100%;
@@ -145,11 +145,19 @@ footer {
   padding: 4.444rem 0 2.778rem 0;
   margin: 0 auto;
   width:73%;
+  h1 {
+    margin-top: 0;
+  }
+  p {
+    line-height: 3rem;
+  }
 }
 
 ul.icon {
   padding-left:0;
   margin-top:0;
+  width: fit-content;
+  height: fit-content;
   li {
     list-style: none;
     a {
@@ -163,6 +171,19 @@ ul.icon {
       background-position: center;
       border-radius: 5.556rem;
       padding:0;
+    }
+    div {
+      vertical-align: middle;
+      display: inline-block;
+      stroke: var(--grey10);
+      width:1.42rem;
+      height:1.42rem;
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 5.556rem;
+      padding:0;
+      margin-right:0.42rem;
     }
   }
 }
@@ -206,6 +227,54 @@ ul.icon {
 .home {
   background-image: url(home.svg);
   background-size: 72% 72%;
+}
+
+.lottie {
+  background-image: url('icons/lottie.svg');
+}
+
+.zeplin {
+  background-image: url('icons/zeplin.svg');
+}
+
+.procreate {
+  background-image: url('icons/procreate.svg');
+}
+
+.principle {
+  background-image: url('icons/principle.svg');
+}
+
+.adobe {
+  background-image: url('icons/adobe.svg');
+}
+
+.adobe-ps {
+  background-image: url('icons/adobe-ps.svg');
+}
+
+.adobe-ae {
+  background-image: url('icons/adobe-ae.svg');
+}
+
+.adobe-ai {
+  background-image: url('icons/adobe-ai.svg');
+}
+
+.figma {
+  background-image: url('icons/figma.svg');
+}
+
+.rive {
+  background-image: url('icons/rive.svg');
+}
+
+.sketch {
+  background-image: url('icons/sketch.svg');
+}
+
+.warpscast {
+  background-image: url('icons/warpcast.svg');
 }
 
 .blastr {

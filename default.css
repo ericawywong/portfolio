@@ -9,6 +9,9 @@
 
   --primary100: #ffc800;
   --primary120: #c99e02;
+
+  --hover-trans: 0.4s;
+  --hover-trans-none: 0;
 }
 
 /* Define Grid Column */
@@ -283,24 +286,24 @@ a {
   font-weight: 600;
   text-decoration: none;
   padding: 0.111rem 0.5rem;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  -o-transition:var(--hover-trans-none);
+  -ms-transition:var(--hover-trans-none);
+  -moz-transition:var(--hover-trans-none);
+  -webkit-transition:var(--hover-trans-none);
+  transition:var(--hover-trans-none);
   p {
     font-weight: 300;
   }
 }
 
 a:hover {
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  -o-transition:var(--hover-trans);
+  -ms-transition:var(--hover-trans);
+  -moz-transition:var(--hover-trans);
+  -webkit-transition:var(--hover-trans);
+  transition:var(--hover-trans);
   background-color: var(--primary100);
-  box-shadow: 0.444rem 0.444rem 0 var(--primary120);
+  box-shadow: 0.222rem 0.222rem 0 var(--primary120);
   border-radius: 2rem;
 }
 
@@ -314,20 +317,20 @@ img {
   justify-content: center;
   align-items: stretch;
   object-fit: cover;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  -o-transition:var(--hover-trans-none);
+  -ms-transition:var(--hover-trans-none);
+  -moz-transition:var(--hover-trans-none);
+  -webkit-transition:var(--hover-trans-none);
+  transition:var(--hover-trans-none);
 }
 
 img:hover {
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-  box-shadow: 0.888rem 0.888rem 0 var(--grey20);
+  -o-transition:var(--hover-trans);
+  -ms-transition:var(--hover-trans);
+  -moz-transition:var(--hover-trans);
+  -webkit-transition:var(--hover-trans);
+  transition:var(--hover-trans);
+  box-shadow: 0.444rem 0.444rem 0 var(--primary100);
 }
 
 .no-hover-effect:hover {
@@ -360,7 +363,8 @@ li:last-child {
 }
 
 .xlarge {
-  font-size: 3.489rem;
+  /* font-size: 3.489rem; */
+  font-size: 4.5rem;
   line-height: 1.2;
   margin-bottom: 1.333rem;
 }
@@ -387,6 +391,7 @@ li:last-child {
 
 .highlight {
   background-color: var(--primary100);
+  box-shadow: 0.222rem 0.322rem 0 var(--grey10);
   padding: 0.111rem 0.778rem;
   border-radius: 1.389rem;
   white-space: nowrap;
@@ -684,6 +689,11 @@ li:last-child {
 }
 
 @media (max-width: 768px) {
+
+  .xlarge {
+    font-size: 3.489rem;
+    /* font-size: 4.5rem; */
+  }
 
   #home .span-1, 
   #home .span-2,

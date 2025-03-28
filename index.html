@@ -26,7 +26,7 @@
             </ul>
     </div>
 
-    <nav>
+    <!-- <nav>
         <div class="nav-container">
             <div class="icon logo"></div>
             <h2>Erica Wong</h2>
@@ -34,18 +34,18 @@
         <div class="nav-container">
             <ul>
                 <li><a class="icon instagram" href="https://www.instagram.com/littleinkventure/" target="_blank"></a></li>
-                <!-- <li><a href="https://www.linkedin.com/in/ericawywong/" target="_blank">LinkedIn</a></li> -->
+                <li><a href="https://www.linkedin.com/in/ericawywong/" target="_blank">LinkedIn</a></li>
                 <li><a class="icon email" href="mailto:ericawyw@gmail.com"></a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
     <div class="container">
         <div class="profile">
             <div class="intro flipper">
                 <div class="front intro-details">
-                    <p class="xlarge xbold">I'm Erica Wong, <br>a UX/UI designer.</p>
-                    <p class="large">I craft journeys for humans with <span class="highlight bold">colorful pixels <canvas id="rainbow" style="width: 32px; height: 32px; vertical-align: text-top;"></canvas></span> and <span class="highlight bold">empathy 😃 😢</span>.</p>
+                    <h1 class="xlarge xbold">👋🏻 I'm Erica Wong, <br>a UX/UI designer.</h1>
+                    <p class="large">Experienced in Front-end coding 👩🏻‍💻 with 15+ years of crafting human-centered journeys filled with <span class="highlight bold">engaging visuals <canvas id="rainbow" style="width: 32px; height: 32px; vertical-align: text-top;"></canvas></span> and <span class="highlight bold">empathy 😃</span> — proudly PM'd by Gatsby.</p>
                     <!-- <button class="button">+</button> -->
                 </div>
                 <!-- <div class="back intro-details">
@@ -136,23 +136,24 @@
 
     <script src="script.js"></script>
     <script src="footer.js"></script>
+    <script src="nav.js"></script>
 
-<script src="https://unpkg.com/@rive-app/canvas"></script>
-<script src="https://unpkg.com/@rive-app/canvas@2.24.0"></script>
+    <script src="https://unpkg.com/@rive-app/canvas"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@2.24.0"></script>
 
-<script>
-    const r = new rive.Rive({
-        src: "index.riv",
-        // OR the path to a discoverable and public Rive asset
-        // src: '/public/example.riv',
-        canvas: document.getElementById("rainbow"),
-        autoplay: true,
-        // artboard: "Arboard", // Optional. If not supplied the default is selected
-        stateMachines: "State Machine 1",
-        onLoad: () => {
-          r.resizeDrawingSurfaceToCanvas();
-        },
-    });
-</script>
+    <script>
+        const r = new rive.Rive({
+            src: "index.riv",
+            // OR the path to a discoverable and public Rive asset
+            // src: '/public/example.riv',
+            canvas: document.getElementById("rainbow"),
+            autoplay: true,
+            // artboard: "Arboard", // Optional. If not supplied the default is selected
+            stateMachines: "State Machine 1",
+            onLoad: () => {
+            r.resizeDrawingSurfaceToCanvas();
+            },
+        });
+    </script>
 </body>
 </html>
