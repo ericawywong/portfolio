@@ -65,6 +65,9 @@ footer {
       margin-bottom:1.25rem;
     }
   }
+    a:hover {
+      padding:0;
+    }
 
   .profile {
     padding: 6.444rem 0 0 0;
