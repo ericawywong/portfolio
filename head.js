@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="icon" href="../favicon.png">
+        <link rel="stylesheet" href="../grid-columns.css">
         <link rel="stylesheet" href="../default.css">
         <link rel="stylesheet" href="../styles.css">
     `;

@@ -8,126 +8,106 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid-columns.css">
     <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-    <!-- <div class="container wip">
-        <img src="WIP.png">
-        <h1>Erica Wong</h1>
-        <p>Vancouver 🌧 BC based UX/UI designer, boasting over 15+ years of experience and coupled with experiences in front-end development, crafting journeys for humans with colorful pixels and empathy.</p>
-        <p>Currently working on some NFT projects including <a href="https://warpcast.com/~/channel/fcknclub" target="_blank">FCKNClub</a> and <a href="https://blastr.xyz/pacfrens" target="_blank">Pac Frens</a>.</p>
-
-            <ul>
-                <li><a href="mailto:ericawyw@gmail.com"><i class="fa-regular fa-envelope fa-xl"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/ericawywong" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl"></i></a></li>
-                <li><a href="https://www.instagram.com/littleinkventure" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
-            </ul>
-    </div> -->
-
-    <!-- <nav>
-        <div class="nav-container">
-            <div class="icon logo"></div>
-            <h2>Erica Wong</h2>
-        </div>
-        <div class="nav-container">
-            <ul>
-                <li><a class="icon instagram" href="https://www.instagram.com/littleinkventure/" target="_blank"></a></li>
-                <li><a href="https://www.linkedin.com/in/ericawywong/" target="_blank">LinkedIn</a></li>
-                <li><a class="icon email" href="mailto:ericawyw@gmail.com"></a></li>
-            </ul>
-        </div>
-    </nav> -->
+<body id="portfolio">
 
     <div class="container">
-        <div class="profile">
-            <div class="intro flipper">
-                <div class="front intro-details">
-                    <h1 class="xlarge xbold">👋🏻 I'm Erica Wong, <br>a UX/UI designer.</h1>
-                    <p class="large">Experienced in Front-end coding 👩🏻‍💻 with 15+ years of crafting human-centered journeys filled with <span class="highlight bold">engaging visuals <canvas id="rainbow" style="width: 32px; height: 32px; vertical-align: text-top;"></canvas></span> and <span class="highlight bold">empathy 😃</span>.</p>
-                    <!-- <button class="button">+</button> -->
+
+        <div class="content-wrapper div-max-width">
+            <div class="profile">
+                <div>
+                <h1>👋🏻 I'm Erica, <br>a UX/UI designer.</h1>
+                <p>Experienced in Front-end coding 👩🏻‍💻 & crafting human-centered journeys with <span>engaging visuals <canvas id="Rainbow" style="width: 32px; height: 32px; vertical-align: text-top;"></canvas></span> & <span>empathy <canvas id="Emoji" style="width: 32px; height: 32px; vertical-align: text-top;"></canvas></span></p>
                 </div>
-                <!-- <div class="back intro-details">
-                    <p>The Gray Gatsby: Tiny boss, mitten paws, big dreams</p>
-                    <p class="large">Dedicated to become world's best micro-manager. Specializes in vocalizing concerns, ensures action plans and deploys in a timely manner. 🐾🏆</p>
-                    <div class="intro-image">
-                        <img src="profile.jpg" alt="Profile Image" width="150">
-                    </div>
-                    <button class="button">+</button>
-                </div> -->
             </div>
         </div>
-        <div id="home">
-            <div class="grid">
-                <!-- <div class="project woosh">
+
+        <div class="content-wrapper">
+            <div class="grid div-max-width">
+                <!-- <div class="woosh">
                     <a href="woosh/index.html">
                     <img src="woosh/product_thumbnail.jpg" alt="Woosh!">
                     <h2>Woosh!</h2>
                     <p>Web App, Web design & Branding for shared laundry in a condo</p>
                     </a>
                 </div>
-                <div class="project stagebites">
+                <div class="stagebites">
                     <a href="stagebites/index.html">
                     <img src="stagebites/product_thumbnail.jpg" alt="StageBites">
                     <h2>StageBites</h2>
                     <p>Mobile app designed for food ordering in theaters</p>
                     </a>
                 </div> -->
-                <!-- <div class="project fcknclub">
+                <!-- <div class="fcknclub">
                     <a href="FCKNClub/index.html">
                         <img src="FCKNClub/product_thumbnail.jpg" alt="FCKNClub">
                         <h2>FCKNClub</h2>
                         <p>NFT project with the Fried Chicken Club</p>
                     </a>
                 </div> -->
-                <!-- <div class="project minime">
+                <!-- <div class="minime">
                     <a href="minime/index.html">
                     <img src="minime/product_thumbnail.jpg" alt="Mini-Me">
                     <h2>Mini-Me</h2>
                     <p>Mobile App, Web App, Web design, Animation for children</p>
                     </a>
                 </div> -->
-                <div class="project span-6">
-                    <a class="no-hover-effect" href="braintest/index.html">
+                <div class="span-12 center">
+                    <h1>UX & Visual</h1>
+                </div>
+                <div class="span-4 m-span-6 s-span-12">
+                    <a href="braintest/index.html">
                         <img src="braintest/product_thumbnail.jpg" alt="BrainTest">
-                        <h2>BrainTest</h2>
+                        <h3>BrainTest</h3>
                         <p>Mobile App, Web App, Web design for Alzheimer's</p>
                     </a>
                 </div>
-                <div class="project span-6">
-                    <a class="no-hover-effect" href="PacFrens/index.html">
-                        <img src="PacFrens/product_thumbnail.jpg" alt="Pac Frens">
-                        <h2>Pac Frens</h2>
-                        <p>NFT project</p> 
+                <div class="span-4 m-span-6 s-span-12">
+                    <a href="bestbuy/designprocess.html">
+                        <img src="bestbuy/product_thumbnail_design_process.jpg" alt="Best Buy">
+                        <h3>Best Buy</h3>
+                        <p>Streamlining Design Handoff</p>
                     </a>
                 </div>
-                <!-- <div class="project just10">
+                <div class="span-4 m-span-6 s-span-12">
+                    <a href="bestbuy/index.html">
+                        <img src="bestbuy/product_thumbnail_enewsletter.jpg" alt="Best Buy">
+                        <h3>Best Buy</h3>
+                        <p>Responsive Redesign of Best Buy E-Newsletters</p>
+                    </a>
+                </div>
+                <!-- <div class="just10">
                     <a href="just10/index.html">
                         <img src="just10/product_thumbnail.jpg" alt="Just 10">
-                        <h2>Just 10</h2>
+                        <h3>Just 10</h3>
                         <p>Mobile App, Web App, Web design for close friends</p>
                     </a>
                 </div> -->
-                <div class="project span-4">
-                    <a class="no-hover-effect" href="bestbuy/designprocess.html">
-                        <img src="bestbuy/product_thumbnail_design_process.jpg" alt="Best Buy">
-                        <h2>Best Buy</h2>
-                        <p>Design process</p>
+                <div class="span-12 center">
+                    <h1>Illustrations</h1>
+                </div>
+                <div class="span-4 m-span-6 s-span-12">
+                    <a href="LittleInkventure/index.html">
+                        <img src="LittleInkventure/product_thumbnail.jpg" alt="Other Illustrations">
+                        <h3>Little Inkventure</h3>
+                        <p>Personal project & social media content managment</p> 
                     </a>
                 </div>
-                <div class="project span-4">
-                    <a class="no-hover-effect" href="bestbuy/index.html">
-                        <img src="bestbuy/product_thumbnail_enewsletter.jpg" alt="Best Buy">
-                        <h2>Best Buy</h2>
-                        <p>Email Design</p>
+                <div class="span-4 m-span-6 s-span-12">
+                    <a href="PacFrens/index.html">
+                        <img src="PacFrens/product_thumbnail.jpg" alt="Pac Frens">
+                        <h3>Pac Frens</h3>
+                        <p>NFT Collectibles</p> 
                     </a>
                 </div>
-                <div class="project span-4">
-                    <a class="no-hover-effect" href="bigbarnworld/index.html">
+                <div class="span-4 m-span-6 s-span-12">
+                    <a href="bigbarnworld/index.html">
                         <img src="bigbarnworld/product_thumbnail.jpg" alt="Big Barn World">
-                        <h2>Big Barn World</h2>
-                        <p>Character illustrations for a Web based game</p>
+                        <h3>Big Barn World</h3>
+                        <p>Character Collectibles</p>
                     </a>
                 </div>
             </div>
@@ -138,20 +118,27 @@
     <script src="footer.js"></script>
     <script src="nav.js"></script>
 
-    <script src="https://unpkg.com/@rive-app/canvas"></script>
-    <script src="https://unpkg.com/@rive-app/canvas@2.24.0"></script>
+<script src="https://unpkg.com/@rive-app/canvas"></script>
 
     <script>
-        const r = new rive.Rive({
+        const rainbow = new rive.Rive({
             src: "index.riv",
-            // OR the path to a discoverable and public Rive asset
-            // src: '/public/example.riv',
-            canvas: document.getElementById("rainbow"),
+            canvas: document.getElementById("Rainbow"),
             autoplay: true,
-            // artboard: "Arboard", // Optional. If not supplied the default is selected
-            stateMachines: "State Machine 1",
+            artboard: "Rainbow", // Optional. If not supplied the default is selected
+            stateMachines: "StateMachine1",
             onLoad: () => {
-            r.resizeDrawingSurfaceToCanvas();
+            rainbow.resizeDrawingSurfaceToCanvas();
+            },
+        });
+        const emoji = new rive.Rive({
+            src: "index.riv",
+            canvas: document.getElementById("Emoji"),
+            autoplay: true,
+            artboard: "Emoji", // Optional. If not supplied the default is selected
+            stateMachines: "StateMachine2",
+            onLoad: () => {
+            emoji.resizeDrawingSurfaceToCanvas();
             },
         });
     </script>

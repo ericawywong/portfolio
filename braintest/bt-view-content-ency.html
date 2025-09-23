@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        // Keep slug in sync with the gate page
+        (function(){
+        var SLUG = "braintest";                      // CHANGE per project
+        var FLAG_KEY = "protect:" + SLUG + ":unlocked";
+        if (!sessionStorage.getItem(FLAG_KEY) && !localStorage.getItem(FLAG_KEY)) {
+            location.replace("./index.html");
+        }
+        })();
+    </script>
+    <script src="../head.js"></script>
+</head>
+    <body id="braintest">
+
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="product-hero">
+                <img src="product_hero.jpg" alt="Project Image">
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="content-wrapper ">
+
+                <div class="grid div-max-width">
+
+                    <div class="introduction">
+                        <h1>Case Study: <br> BrainTest – Early Alzheimer’s Screening App</h1>
+                        <p>BrainTest is an empirically validated app designed for the early screening of Alzheimer’s — a chronic and irreversible condition that affects memory, thinking, and behavior. While often associated with those aged 65 and older, research shows symptoms can emerge earlier, making early detection critical.</p>
+                        <p>I worked as a UI Designer on BrainTest, helping shape its cross-platform design system, prototypes, animations, and educational content. The project was particularly meaningful because it gave patients and families the ability to screen for symptoms privately at home, while also supporting doctors in their research and clinical practices.</p>
+                        <p><a href="https://braintest.com" class="web" target="_blank">Visit BrainTest →</a></p>
+                        <p><a href="https://apps.apple.com/ca/app/braintest/id1030864182" class="web" target="_blank">iOS →</a></p>
+                        <p><a href="https://play.google.com/store/apps/details?id=com.braintest.app&hl=en_US&gl=US" class="web" target="_blank">Android →</a></p>
+                    </div>
+
+                    <div class="fact-sheet">
+                        <div class="multi-column-2">
+                            <div class="my-role">
+                                <h2>My Role</h2>
+                                <ul>
+                                    <li>UI Designer</li>
+                                    <li>Design System & Libraries</li>
+                                    <li>Responsive Web, iOS, Android</li>
+                                    <li>Prototype</li>
+                                    <li>Animator</li>
+                                    <li>Video Editing</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tools-used">
+                                <h2>Tools</h2>
+                                <ul class="icons-tools">
+                                    <li class="sketch">Sketch</li>
+                                    <li class="zeplin">Zeplin</li>
+                                    <li class="lottie">Lottie</li>
+                                    <li class="adobe-ae">After Effects</li>
+                                    <li class="adobe-ps">Photoshop</li>
+                                    <li class="adobe-ai">Illustrator</li>
+                                    <li class="principle">Principle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="challenge">
+                        <h2>🔍 Challenges</h2>
+                        <ul>
+                            <li>Alzheimer’s is a sensitive subject; the app needed to feel trustworthy yet approachable.</li>
+                            <li>The app served both seniors and family members, requiring accessible, easy-to-use design.</li>
+                            <li>The design had to work seamlessly across iOS, Android, and web platforms.</li>
+                            <li>Colors had to be chosen carefully for readability and senior accessibility.</li>
+                            <li>Doctors required a clinic-specific version tailored to professional use.</li>
+                            <li>Inconsistent design files across the team led to inefficiencies and friction in the handoff process.</li>
+                            <li>The assessment flow needed to provide clear guidance and reassurance, since early symptoms are often subtle and users may already feel anxious.</li>
+                        </ul>
+                    </div>
+
+                    <div class="insight" style="--colored-block-color: var(--project-braintest);">
+                        <div class="grid">
+                            <div>
+                                <h2>💡 Insight</h2>
+                                <p>This project wasn’t just about usability — it was about empathy. Seniors and their families were often using BrainTest at moments of uncertainty. The app needed to reduce anxiety while providing a scientifically valid assessment.</p>
+                                
+                                <p>Through research and collaboration with doctors, we discovered:</p>
+                                <ul>
+                                    <li>Seniors valued simplicity, clarity, and high-contrast visuals over decorative detail.</li>
+                                    <li>Families appreciated educational resources and guided tutorials that explained what symptoms might mean.</li>
+                                    <li>Doctors saw value in BrainTest not just as a screening tool, but as a way to support clinical research and improve patient outcomes.</li>
+                                    <li>Patients felt reassured knowing they could take a private, at-home screening before seeking medical care.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solution" style="--colored-block-color: var(--project-braintest);">
+                        <div class="grid">
+                            <div>
+                                <h2>Key Features</h2>
+                                <ul>
+                                    <Li><span class="bold">Early Detection →</span> Identifies subtle signs of Alzheimer’s for timely intervention.</li>
+                                    <li><span class="bold">Accessibility →</span> Offers private, at-home screening without needing a doctor’s appointment.</li>
+                                    <li><span class="bold">Clinic-Specific Version →</span> Designed a tailored workflow for doctors to use directly in their practices.</li>
+                                    <li><span class="bold">Collaboration with Doctors →</span> Supported medical professionals by aligning design decisions with clinical research needs.</li>
+                                    <li><span class="bold">Guided Tutorials →</span> Simple, step-by-step instructions reduced anxiety and confusion.</li>
+                                    <li><span class="bold">Patient Portals →</span> Provided users and families with access to results and the ability to connect with doctors.</li>
+                                    <li><span class="bold">Educational Resources →</span> Built an interactive guide that explained Alzheimer’s in a trustworthy, approachable way.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-row-even">
+
+                    <div class="grid div-max-width">
+
+                        <div class="general-text">
+                            <h2>Interactive Guide</h2>
+                            <p>Understanding that Alzheimer’s is a sensitive subject, we aimed to create a design that balances professionalism with a light-hearted, approachable feel. We developed a series of colorful infographics and illustrations to effectively convey various scenarios related to Alzheimer’s while maintaining a sense of trustworthiness. Additionally, we crafted interactive questions to engage users, enhancing their experience through thoughtful design.</p>
+                            <p>The animations were created in After Effects and implemented using the Lottie plugin, ensuring they are fully responsive without compromising image quality. This approach allowed for seamless integration of micro-animations, enhancing user interactivity and creating a more engaging and visually appealing interface.
+                            </p>
+                        </div>
+
+                        <div class="insight" style="--colored-block-color: var(--project-braintest);">
+                            <div class="grid">
+                                <div>
+                                    <h2>Future Enhancements</h2>
+                                    <p>To further improve the Interactive Guide, I plan to redesign it using Rive. This would enable the creation of fully animated and interactive experiences with minimal developer time and resources while maintaining complete control over animations and interactions. Additionally, increasing the number of pop-up questions throughout the guide would boost user engagement, making the experience more dynamic and interactive.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="grid div-max-width">
+
+                    <div class="introduction">
+                        <h2>Design System & Component Library</h2>
+                        <p>In 2015, BrainTest’s design process started with Photoshop. As our team expanded, we transitioned to Sketch Cloud, which provided all designers with easy access to the most up-to-date files and eliminated constant interruptions.</p>
+                        <p>Recognizing inconsistencies across various designers’ files and versions, I took the initiative to build a comprehensive design library for BrainTest. This centralized library ensured cohesive and efficient mockups by standardizing components. Additionally, it streamlined communication between designers and developers by finalizing naming conventions for elements and icons.</p>
+                        <p>This initiative not only improved the overall design workflow but also enhanced the quality and consistency of our product, making it easier for our team to collaborate and deliver high-quality results.</p>
+                    </div>
+
+                    <div class="display-image">
+                        <img src="design_system_figma.png">
+                    </div>
+
+                    <div class="impact" style="--colored-block-color: var(--project-braintest);">
+                        <div class="grid">
+                            <div>
+                                <h2>Conclusion</h2>
+                                <ul>
+                                    <li>Achieved high stakeholder satisfaction by delivering designs that met business goals and user needs.</li>
+                                    <li>Enhanced design team efficiency by streamlining workflows and processes.</li>
+                                    <li>Ensured consistent branding and user interface across all platforms.</li>
+                                    <li>Developed accessible and user-friendly interfaces tailored for elderly users, broadening our target audience and improving user experience.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    <script src="../script.js"></script>
+    <script src="../footer.js"></script>
+    <script src="../nav.js"></script>
+</body>
+
+</html>
