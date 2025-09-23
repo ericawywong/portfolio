@@ -89,6 +89,10 @@ a:hover {
 
 }
 
+a:has(img):hover {
+  padding: 0;
+}
+
 img {
   border-radius: var(--border-radius);
   margin: 0;
@@ -106,7 +110,7 @@ h1, h2, h3 {
   font-optical-sizing: auto;
   font-weight: 600;
   display: block;
-  margin: 0;
+  margin-top: 0;
 }
 
 h1 {
