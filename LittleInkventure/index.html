@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <!-- Minimal anti-FOUC: page is invisible until everything is ready -->
+    <style>
+    /* Keep this tiny to avoid blocking */
+    html.preload body { visibility: hidden; }
+    html.ready body  { visibility: visible; }
+    </style>
+    <script>
+    // Add 'preload' ASAP (prevents flash)
+    document.documentElement.classList.add('preload');
+    // When the page (CSS, fonts, images) is fully ready, reveal it
+    window.addEventListener('load', function() {
+        document.documentElement.classList.remove('preload');
+        document.documentElement.classList.add('ready');
+    });
+    </script>
     <script src="../head.js"></script>
-</head>
 <body id="littleinkventure">
 
     <div class="container">
         <div class="content-wrapper">
             <div class="product-hero">
-            <img src="product_hero.jpg" alt="Project Image">
+            <img src="product_hero.jpg" alt="Project Image" loading="eager">
             </div>
         </div>
     </div>
@@ -63,22 +76,22 @@
                 <div class="display-image">
                         <ul class="multi-column-3">
                             <li>
-                                <a href="https://www.instagram.com/littleinkventure/p/DOgyh_FiGtu/" target="_blank"><img src="IMG_0630.jpg"></a>
+                                <a href="https://www.instagram.com/littleinkventure/p/DOgyh_FiGtu/" target="_blank"><img src="IMG_0630.jpg" loading="lazy"></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/littleinkventure/p/DOZAc_7iLYm/" target="_blank"><img src="IMG_0622.jpg"></a>
+                                <a href="https://www.instagram.com/littleinkventure/p/DOZAc_7iLYm/" target="_blank"><img src="IMG_0622.jpg" loading="lazy"></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/littleinkventure/p/DOd8wGGD-Mj/" target="_blank"><img src="IMG_0618.jpg"></a>
+                                <a href="https://www.instagram.com/littleinkventure/p/DOd8wGGD-Mj/" target="_blank"><img src="IMG_0618.jpg" loading="lazy"></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/littleinkventure/p/DNyOgTi1Cdx/" target="_blank"><img src="IMG_0552.jpg"></a>
+                                <a href="https://www.instagram.com/littleinkventure/p/DNyOgTi1Cdx/" target="_blank"><img src="IMG_0552.jpg" loading="lazy"></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/littleinkventure/p/DNOFnXJIi6t/" target="_blank"><img src="IMG_0471.jpg"></a>
+                                <a href="https://www.instagram.com/littleinkventure/p/DNOFnXJIi6t/" target="_blank"><img src="IMG_0471.jpg" loading="lazy"></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/littleinkventure/p/DMy5MyXpVSd/" target="_blank"><img src="IMG_0375.jpg"></a>
+                                <a href="https://www.instagram.com/littleinkventure/p/DMy5MyXpVSd/" target="_blank"><img src="IMG_0375.jpg" loading="lazy"></a>
                             </li>
                         </ul>
                 </div>

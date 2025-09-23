@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="../head.js"></script>
-</head>
+
+    <!-- Minimal anti-FOUC: page is invisible until everything is ready -->
+<style>
+  /* Keep this tiny to avoid blocking */
+  html.preload body { visibility: hidden; }
+  html.ready body  { visibility: visible; }
+</style>
+<script>
+  // Add 'preload' ASAP (prevents flash)
+  document.documentElement.classList.add('preload');
+  // When the page (CSS, fonts, images) is fully ready, reveal it
+  window.addEventListener('load', function() {
+    document.documentElement.classList.remove('preload');
+    document.documentElement.classList.add('ready');
+  });
+</script>
+<script src="../head.js"></script>
 <body id="bestbuy">
 
     <div class="container">
         <div class="content-wrapper">
             <div class="product-hero">
-                <img src="product_hero_enewsletter.jpg" alt="Best Buy E-Newsletters">
+                <img src="product_hero_enewsletter.jpg" alt="Best Buy E-Newsletters" loading="eager">
             </div>
         </div>
     </div>
@@ -49,7 +63,7 @@
                 <div class="sticky-block">
                     <div class="grid">
                         <div class="m-span-12 image-block">
-                            <img src="BBYweekly_old.jpg">
+                            <img src="BBYweekly_old.jpg" loading="lazy">
                         </div>
                         <div class="challenge text-block">
                             <h2>🔍 Challenge: Desktop-Centric Design in a Mobile Era</h2>
@@ -100,7 +114,7 @@
                             </div>
                         </div>
                         <div class="m-span-12 image-block">
-                            <img src="BBYweekly_new.jpg">
+                            <img src="BBYweekly_new.jpg" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -117,17 +131,17 @@
                 <div class="display-image center">
                     <h2>Old Design</h2>
                     <figure>
-                        <img src="bestbuy-3.png">
-                        <figcaption class="center">Figure 1. Previous version of Best Buy E-newsletter design focusing on desktop</figcaption>
+                        <img src="bestbuy-3.png" alt="Legacy Best Buy newsletter with dense copy and small images" loading="lazy">
+  <figcaption>Figure 1. Legacy desktop-centric layout prior to redesign.</figcaption>
                     </figure>
                 </div>
 
                 <div class="display-image center">
                     <h2>New Design</h2>
                     <figure>
-                        <img src="bestbuy-2.png">
-                        <figcaption class="center">Figure 2. Redesign of Best Buy E-newsletter focusing on mobile view</figcaption>
-                    </figure>
+                        <img src="bestbuy-2.png" alt="Mobile-first redesign with larger imagery and CTAs" loading="lazy">
+  <figcaption>Figure 2. Mobile-first redesign; A/B tested (+20% engagement across rounds).</figcaption>
+</figure>
                 </div>
 
                 <div class="impact" style="--colored-block-color: var(--project-bestbuy);">

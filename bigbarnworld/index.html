@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="../head.js"></script>
-</head>
+
+    <!-- Minimal anti-FOUC: page is invisible until everything is ready -->
+<style>
+  /* Keep this tiny to avoid blocking */
+  html.preload body { visibility: hidden; }
+  html.ready body  { visibility: visible; }
+</style>
+<script>
+  // Add 'preload' ASAP (prevents flash)
+  document.documentElement.classList.add('preload');
+  // When the page (CSS, fonts, images) is fully ready, reveal it
+  window.addEventListener('load', function() {
+    document.documentElement.classList.remove('preload');
+    document.documentElement.classList.add('ready');
+  });
+</script>
+<script src="../head.js"></script>
 <body id="bigbarnworld">
 
     <div class="container">
         <div class="content-wrapper">
             <div class="product-hero">
-                <img src="product_hero.png" alt="Project Image">
+                <img src="product_hero.png" alt="Project Image" loading="eager">
             </div>
         </div>
     </div>
@@ -48,7 +62,7 @@
                 <div class="challenge">
                     <h2>🔍 Challenges</h2>
                     <ul>
-                        <li>Create characters that are instantly recognizable at small resolutions and small devices.</li>
+                        <li>Create characters that are instantly  recognizable at small sizes on mobile devices.</li>
                         <li>Balance humor and charm while staying consistent with the established art style.</li>
                         <li>Design both adult and baby versions to support in-game progression.</li>
                         <li>Ensure each series feels fresh but also connected to seasonal events.</li>
@@ -56,11 +70,11 @@
                 </div>
 
                 <div class="start-4-span-6 m-start-3-span-8 s-start-2-span-10 s-center">
-                    <img src="OwlBabyDemo.png">
+                    <img src="OwlBabyDemo.png" loading="lazy">
                 </div>
 
                 <div class="start-4-span-6 m-start-3-span-8 s-start-2-span-10 s-center">
-                    <img src="OwlDemo.png">
+                    <img src="OwlDemo.png" loading="lazy">
                 </div>
 
                 <div class="insight" style="--colored-block-color: var(--project-bigbarnworld);">
@@ -81,22 +95,22 @@
                     <p>Designed for a summer event, these animals brought humor and lightheartedness into the farm setting.</p>
                     <ul class="multi-column-2">
                             <li>
-                                <img src="CampingBearToilet.gif">
+                                <img src="CampingBearToilet.gif" loading="lazy">
                             </li>
                             <li>
-                                <img src="CampingBearBaby.png">
+                                <img src="CampingBearBaby.png" loading="lazy">
                             </li>
                             <li>
-                                <img src="CampingFrog.png">
+                                <img src="CampingFrog.png" loading="lazy">
                             </li>
                             <li>
-                                <img class="bbw-pot-beach" src="CampingFrogBaby.png">
+                                <img class="bbw-pot-beach" src="CampingFrogBaby.png" loading="lazy">
                             </li>
                             <li>
-                                <img class="bbw-pot-forest" src="CampingPanda.png">
+                                <img class="bbw-pot-forest" src="CampingPanda.png" loading="lazy">
                             </li>
                             <li>
-                                <img src="CampingPandaBaby.png">
+                                <img src="CampingPandaBaby.png" loading="lazy">
                             </li>
                     </ul>
                 </div>
@@ -105,7 +119,7 @@
                     <h3>🎩 Magic Moose</h3>
                     <p>A standalone character designed for a special event.</p>
                     <ul class="multi-column-2">
-                        <li><img src="MagicMoose.gif"></li>
+                        <li><img src="MagicMoose.gif" loading="lazy"></li>
                     </ul>
                 </div>
                 
@@ -113,17 +127,17 @@
                     <h3>🧸 Plush Series</h3>
                     <p>Developed as part of a holiday collectible drop, this series reimagined animals as plush toys.</p>
                     <ul class="multi-column-2">
-                            <li><img src="PlushGiraffe.png">
+                            <li><img src="PlushGiraffe.png" loading="lazy">
                         </li>
-                            <li><img class="bbw-pot-safari" src="PlushGiraffeBaby.png">
+                            <li><img class="bbw-pot-safari" src="PlushGiraffeBaby.png" loading="lazy">
                         </li>
-                            <li><img class="bbw-pot-forest" src="PlushKaola.png">
+                            <li><img class="bbw-pot-forest" src="PlushKaola.png" loading="lazy">
                         </li>
-                            <li><img src="PlushKaolaBaby.png">
+                            <li><img src="PlushKaolaBaby.png" loading="lazy">
                         </li>
-                            <li><img src="PlushOctopus.png">
+                            <li><img src="PlushOctopus.png" loading="lazy">
                         </li>
-                            <li><img class="bbw-pot-underwater" src="PlushOctopusBaby.png">
+                            <li><img class="bbw-pot-underwater" src="PlushOctopusBaby.png" loading="lazy">
                         </li>
                     </ul>
                 </div>

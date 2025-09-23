@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="../head.js"></script>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../projectDetails.css">
-</head>
+
+    <!-- Minimal anti-FOUC: page is invisible until everything is ready -->
+<style>
+  /* Keep this tiny to avoid blocking */
+  html.preload body { visibility: hidden; }
+  html.ready body  { visibility: visible; }
+</style>
+<script>
+  // Add 'preload' ASAP (prevents flash)
+  document.documentElement.classList.add('preload');
+  // When the page (CSS, fonts, images) is fully ready, reveal it
+  window.addEventListener('load', function() {
+    document.documentElement.classList.remove('preload');
+    document.documentElement.classList.add('ready');
+  });
+</script>
+<script src="../head.js"></script>
 <body id="bestbuy">
 
     <div class="container">
         <div class="content-wrapper">
             <div class="product-hero">
-                <img src="product_hero_design_process.jpg" alt="Best Buy Design Process">
+                <img src="product_hero_design_process.jpg" alt="Best Buy Design Process" loading="eager">
             </div>
         </div>
     </div>
@@ -53,7 +65,7 @@
                 </div>
 
                 <div class="display-image">
-                    <img src="designprocess_old.png">
+                    <img src="designprocess_old.png" loading="lazy">
                 </div>
 
                 <div class="span-12">
@@ -63,17 +75,17 @@
                 <div class="display-image">
                     <ul class="multi-column-3 xs-span-12">
                         <li>
-                            <img src="problem_lastminedits.png" class="add-margin-bottom reduce-image-size">
+                            <img src="problem_lastminedits.png" class="add-margin-bottom reduce-image-size" loading="lazy">
                             <h3 class="center">🕰️ Overtime hours</h3>
                             <p class="center">Designers working late to accommodate sudden revisions</p>
                         </li>
                         <li>
-                            <img src="problem_stress.png" class="add-margin-bottom reduce-image-size">
+                            <img src="problem_stress.png" class="add-margin-bottom reduce-image-size" loading="lazy">
                             <h3 class="center">😖 Burnout & stress</h3>
                             <p class="center">Unpredictable workloads and communication breakdowns</p>
                         </li>
                         <li>
-                            <img src="problem_invoice.png" class="add-margin-bottom reduce-image-size">
+                            <img src="problem_invoice.png" class="add-margin-bottom reduce-image-size" loading="lazy">
                             <h3 class="center">💸 Increased costs</h3>
                             <p class="center">Frequent revision rounds submitted to the outsourcing agency</p>
                         </li>
@@ -112,7 +124,7 @@
                     </div>
                 </div>
 
-                <div class="display-image"><img src="designprocess_new.png"></div>
+                <div class="display-image"><img src="designprocess_new.png" loading="lazy"></div>
 
                 <div class="challenge">
                     <h2>Overcoming Implementation Hurdles</h2>

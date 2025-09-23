@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+        <!-- Minimal anti-FOUC: page is invisible until everything is ready -->
+<style>
+  /* Keep this tiny to avoid blocking */
+  html.preload body { visibility: hidden; }
+  html.ready body  { visibility: visible; }
+</style>
+<script>
+  // Add 'preload' ASAP (prevents flash)
+  document.documentElement.classList.add('preload');
+  // When the page (CSS, fonts, images) is fully ready, reveal it
+  window.addEventListener('load', function() {
+    document.documentElement.classList.remove('preload');
+    document.documentElement.classList.add('ready');
+  });
+</script>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erica Wong | UX/UI Designer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.png">
-    <link rel="stylesheet" href="grid-columns.css">
-    <link rel="stylesheet" href="default.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erica Wong | UX/UI Designer — Portfolio</title>
+  <meta name="description" content="UX/UI designer in Vancouver, BC. Case studies across product design, newsletters, and illustration. Front-end experience and human-centered design.">
+
+  <!-- Minimal anti-FOUC (optional) -->
+  <style>html.preload body{visibility:hidden}html.ready body{visibility:visible}</style>
+  <script>document.documentElement.classList.add('preload');window.addEventListener('load',function(){document.documentElement.classList.remove('preload');document.documentElement.classList.add('ready');});</script>
+
+  <!-- Favicons / social -->
+  <link rel="icon" href="favicon.png">
+  <meta property="og:title" content="Erica Wong | UX/UI Designer">
+  <meta property="og:description" content="Human-centered UX/UI work with measurable impact.">
+  <meta property="og:image" content="og-card-home.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts: preconnect + load fast with display=swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS: keep render-blocking for main layout (no JS injection) -->
+  <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Preload above-the-fold assets -->
+  <!-- <link rel="preload" as="image" href="braintest/product_thumbnail.jpg">
+  <link rel="preload" as="image" href="bestbuy/product_thumbnail_design_process.jpg">
+  <link rel="preload" as="image" href="bestbuy/product_thumbnail_enewsletter.jpg"> -->
+
+  <!-- (Optional) Rive preloading if the hero uses it -->
+  <link rel="preload" as="fetch" href="index.riv" crossorigin>
 </head>
+
 <body id="portfolio">
 
     <div class="container">
@@ -20,7 +60,7 @@
             <div class="profile">
                 <div>
                 <h1><div class="xs-hide">👋🏻</div> I'm Erica, <br>a UX/UI designer.</h1>
-                <p>Experienced in Front-end coding 👩🏻‍💻 & crafting human-centered journeys infused with <span>engaging visuals <canvas id="Rainbow" style="width: 32px; height: 32px; vertical-align: text-top;" alt="Rainbow"></canvas></span> & <span>empathy <canvas id="Emoji" style="width: 32px; height: 32px; vertical-align: text-top;" alt="Emoji"></canvas></span></p>
+                <p>Experienced in front-end coding 👩🏻‍💻; I craft human-centered journeys infused with <span>engaging visuals <canvas id="Rainbow" style="width: 32px; height: 32px; vertical-align: text-top;" alt="Rainbow"></canvas></span> & <span>empathy <canvas id="Emoji" style="width: 32px; height: 32px; vertical-align: text-top;" alt="Emoji"></canvas></span></p>
                 </div>
             </div>
         </div>
@@ -56,7 +96,7 @@
                     </a>
                 </div> -->
                 <div class="span-12 center">
-                    <h1>UX & Visual</h1>
+                    <h1>UX & Visual Design</h1>
                 </div>
                 <div class="span-4 m-span-6 s-span-12">
                     <a href="braintest/index.html">

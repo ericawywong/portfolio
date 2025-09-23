@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="../head.js"></script>
-</head>
+
+    <!-- Minimal anti-FOUC: page is invisible until everything is ready -->
+<style>
+  /* Keep this tiny to avoid blocking */
+  html.preload body { visibility: hidden; }
+  html.ready body  { visibility: visible; }
+</style>
+<script>
+  // Add 'preload' ASAP (prevents flash)
+  document.documentElement.classList.add('preload');
+  // When the page (CSS, fonts, images) is fully ready, reveal it
+  window.addEventListener('load', function() {
+    document.documentElement.classList.remove('preload');
+    document.documentElement.classList.add('ready');
+  });
+</script>
+<script src="../head.js"></script>
 <body id="pacfrens">
 
 <div class="container">
         <div class="content-wrapper">
             <div class="product-hero">
-                <img src="product_hero.gif" alt="Pac Frens">
+                <img src="product_hero.gif" alt="PacFrens" loading="eager">
             </div>
         </div>
 </div>
@@ -47,15 +61,15 @@
 
             <div class="display-image">
                 <ul class="multi-column-4">
-                            <li><img src="PacFrens-5.jpg"></li>
-                            <li><img src="PacFrens-1.jpg"></li>
-                            <li><img src="PacFrens-2.jpg"></li>
-                            <li><img src="PacFrens-3.jpg"></li>
-                            <li><img src="PacFrens-4.jpg"></li>
-                            <!-- <li><img src="PacFrens-6.jpg"></li> -->
-                            <li><img src="PacFrens-7.jpg"></li>
-                            <li><img src="PacFrens-9.jpg"></li>
-                            <li><img src="PacFrens-8.jpg"></li>
+                            <li><img src="PacFrens-5.jpg" alt="PacFrens character variant" loading="lazy"></li>
+                            <li><img src="PacFrens-1.jpg" alt="PacFrens character variant" loading="lazy"></li>
+                            <li><img src="PacFrens-2.jpg" alt="PacFrens character variant" loading="lazy"></li>
+                            <li><img src="PacFrens-3.jpg" alt="PacFrens character variant" loading="lazy"></li>
+                            <li><img src="PacFrens-4.jpg" alt="PacFrens character variant" loading="lazy"></li>
+                            <!-- <li><img src="PacFrens-6.jpg" alt="PacFrens character variant" loading="lazy"></li> -->
+                            <li><img src="PacFrens-7.jpg" alt="PacFrens character variant" loading="lazy"></li>
+                            <li><img src="PacFrens-9.jpg" alt="PacFrens character variant" loading="lazy"></li>
+                            <li><img src="PacFrens-8.jpg" alt="PacFrens character variant" loading="lazy"></li>
                 </ul>
             </div>
 
