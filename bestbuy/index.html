@@ -1,34 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="preload" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Minimal anti-FOUC: page is invisible until everything is ready -->
-<style>
-  /* Keep this tiny to avoid blocking */
-  html.preload body { visibility: hidden; }
-  html.ready body  { visibility: visible; }
-</style>
-<script>
-  // Add 'preload' ASAP (prevents flash)
-  document.documentElement.classList.add('preload');
-  // When the page (CSS, fonts, images) is fully ready, reveal it
-  window.addEventListener('load', function() {
-    document.documentElement.classList.remove('preload');
-    document.documentElement.classList.add('ready');
-  });
-</script>
-<script src="../head.js"></script>
-<body id="bestbuy">
+  <!-- critical anti-FOUC: must be inline so it applies before external CSS -->
+  <style>html.preload body{visibility:hidden; opacity:0}</style>
+
+  <!-- fonts first (optional but nice) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+
+  <!-- your CSS loaded by HTML (not JS) -->
+  <link rel="stylesheet" href="/default.css">
+  <link rel="stylesheet" href="/styles.css">
+  </head>
+<body id="bestbuy-enewsletter">
 
     <div class="container">
+
         <div class="content-wrapper">
-            <div class="product-hero">
-                <img src="product_hero_enewsletter.jpg" alt="Best Buy E-Newsletters" loading="eager">
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="content-wrapper ">
             <div class="grid div-max-width">
 
                 <div class="introduction">
@@ -76,7 +70,7 @@
                                 <li>Poor mobile usability and touch interactions</li>
                             </ul>
             
-                            <p>These problems led to low engagement rates and a suboptimal user experience, highlighting the need for a responsive redesign.</p>
+                            <p>These problems led to low ↘ engagement rates and a suboptimal  user experience, highlighting the need for a responsive redesign.</p>
                         </div>
                     </div>
                 </div>
@@ -162,15 +156,34 @@
                     <p>This redesign was more than a facelift. It was a system-level solution tailored to modern user behavior, brand alignment, and measurable performance—demonstrating how thoughtful design can bridge creativity and business value.</p>
                 </div>
 
-                <div class="span-6"><a href="designprocess.html"><span class="bold">←</span> Part 1: Streamlining Design Handoff</a></div>
-
             </div>
         </div>
     </div>
 
-    <script src="../script.js"></script>
-    <script src="../footer.js"></script>
-    <script src="../nav.js"></script>
+   <nav class="project-nav"></nav>
+
+    <template id="hero-template">
+    <div class="product-hero">
+        <img src="" alt="">
+    </div>
+    </template>
+    
+    <script src="../site.js"></script>
+    <script>
+    Site.Head.init({ basePath: "../" });
+    Site.Nav.init({ basePath: "../" });
+    Site.Footer.init();
+    Site.ProjectNav.init({
+        container: ".project-nav",
+        jsonPath: "../projects.json",
+        basePath: "../",
+        scope: "all",  // or "section" if you only want within the same section
+        loop: true
+    });
+    </script>
+
+    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
+
 </body>
 
 </html>

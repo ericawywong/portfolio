@@ -1,72 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-        <!-- Minimal anti-FOUC: page is invisible until everything is ready -->
-<style>
-  /* Keep this tiny to avoid blocking */
-  html.preload body { visibility: hidden; }
-  html.ready body  { visibility: visible; }
-</style>
-<script>
-  // Add 'preload' ASAP (prevents flash)
-  document.documentElement.classList.add('preload');
-  // When the page (CSS, fonts, images) is fully ready, reveal it
-  window.addEventListener('load', function() {
-    document.documentElement.classList.remove('preload');
-    document.documentElement.classList.add('ready');
-  });
-</script>
-
+<!doctype html>
+<html class="preload" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Erica Wong | UX/UI Designer — Portfolio</title>
-  <meta name="description" content="UX/UI designer in Vancouver, BC. Case studies across product design, newsletters, and illustration. Front-end experience and human-centered design.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Minimal anti-FOUC (optional) -->
-  <style>html.preload body{visibility:hidden}html.ready body{visibility:visible}</style>
-  <script>document.documentElement.classList.add('preload');window.addEventListener('load',function(){document.documentElement.classList.remove('preload');document.documentElement.classList.add('ready');});</script>
+  <!-- critical anti-FOUC: must be inline so it applies before external CSS -->
+  <style>html.preload body{visibility:hidden; opacity:0}</style>
 
-  <!-- Favicons / social -->
-  <link rel="icon" href="favicon.png">
-  <meta property="og:title" content="Erica Wong | UX/UI Designer">
-  <meta property="og:description" content="Human-centered UX/UI work with measurable impact.">
-  <meta property="og:image" content="og-card-home.jpg">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Fonts: preconnect + load fast with display=swap -->
+  <!-- fonts first (optional but nice) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
 
-  <!-- CSS: keep render-blocking for main layout (no JS injection) -->
-  <link rel="stylesheet" href="default.css">
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Preload above-the-fold assets -->
-  <!-- <link rel="preload" as="image" href="braintest/product_thumbnail.jpg">
-  <link rel="preload" as="image" href="bestbuy/product_thumbnail_design_process.jpg">
-  <link rel="preload" as="image" href="bestbuy/product_thumbnail_enewsletter.jpg"> -->
-
-  <!-- (Optional) Rive preloading if the hero uses it -->
-  <link rel="preload" as="fetch" href="index.riv" crossorigin>
-</head>
-
-<body id="portfolio">
+  <!-- your CSS loaded by HTML (not JS) -->
+  <link rel="stylesheet" href="/default.css">
+  <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body id="portfolio">
 
     <div class="container">
 
         <div class="content-wrapper div-max-width">
             <div class="profile">
                 <div>
-                <h1><div class="xs-hide">👋🏻</div> I'm Erica, <br>a UX/UI designer.</h1>
+                <h1><div class="xs-hide">👋🏻</div> I'm Erica, <br>a Product Designer.</h1>
                 <p>Experienced in front-end coding 👩🏻‍💻; I craft human-centered journeys infused with <span>engaging visuals <canvas id="Rainbow" style="width: 32px; height: 32px; vertical-align: text-top;" alt="Rainbow"></canvas></span> & <span>empathy <canvas id="Emoji" style="width: 32px; height: 32px; vertical-align: text-top;" alt="Emoji"></canvas></span></p>
                 </div>
             </div>
-        </div>
 
-        <div class="content-wrapper">
             <div class="grid div-max-width">
+
                 <!-- <div class="woosh">
                     <a href="woosh/index.html">
                     <img src="woosh/product_thumbnail.jpg" alt="Woosh!">
@@ -74,91 +38,60 @@
                     <p>Web App, Web design & Branding for shared laundry in a condo</p>
                     </a>
                 </div>
+
                 <div class="stagebites">
                     <a href="stagebites/index.html">
                     <img src="stagebites/product_thumbnail.jpg" alt="StageBites">
                     <h2>StageBites</h2>
                     <p>Mobile app designed for food ordering in theaters</p>
                     </a>
-                </div> -->
-                <!-- <div class="fcknclub">
+                </div>
+
+                <div class="fcknclub">
                     <a href="FCKNClub/index.html">
                         <img src="FCKNClub/product_thumbnail.jpg" alt="FCKNClub">
                         <h2>FCKNClub</h2>
                         <p>NFT project with the Fried Chicken Club</p>
                     </a>
-                </div> -->
-                <!-- <div class="minime">
-                    <a href="minime/index.html">
-                    <img src="minime/product_thumbnail.jpg" alt="Mini-Me">
-                    <h2>Mini-Me</h2>
-                    <p>Mobile App, Web App, Web design, Animation for children</p>
-                    </a>
-                </div> -->
-                <div class="span-12 center">
-                    <h1>UX & Visual Design</h1>
                 </div>
-                <div class="span-4 m-span-6 s-span-12">
-                    <a href="braintest/index.html">
-                        <img src="braintest/product_thumbnail.jpg" alt="BrainTest">
-                        <h3>BrainTest</h3>
-                        <p>Mobile App, Web App, Web design for Alzheimer's</p>
-                    </a>
-                </div>
-                <div class="span-4 m-span-6 s-span-12">
-                    <a href="bestbuy/designprocess.html">
-                        <img src="bestbuy/product_thumbnail_design_process.jpg" alt="Best Buy">
-                        <h3>Best Buy</h3>
-                        <p>Streamlining Design Handoff</p>
-                    </a>
-                </div>
-                <div class="span-4 m-span-6 s-span-12">
-                    <a href="bestbuy/index.html">
-                        <img src="bestbuy/product_thumbnail_enewsletter.jpg" alt="Best Buy">
-                        <h3>Best Buy</h3>
-                        <p>Responsive Redesign of Best Buy E-Newsletters</p>
-                    </a>
-                </div>
-                <!-- <div class="just10">
+
+                <div class="just10">
                     <a href="just10/index.html">
                         <img src="just10/product_thumbnail.jpg" alt="Just 10">
                         <h3>Just 10</h3>
                         <p>Mobile App, Web App, Web design for close friends</p>
                     </a>
                 </div> -->
-                <div class="span-12 center">
-                    <h1>Illustrations</h1>
-                </div>
-                <div class="span-4 m-span-6 s-span-12">
-                    <a href="LittleInkventure/index.html">
-                        <img src="LittleInkventure/product_thumbnail.jpg" alt="Other Illustrations">
-                        <h3>Little Inkventure</h3>
-                        <p>Personal project & social media content managment</p> 
-                    </a>
-                </div>
-                <div class="span-4 m-span-6 s-span-12">
-                    <a href="PacFrens/index.html">
-                        <img src="PacFrens/product_thumbnail.jpg" alt="Pac Frens">
-                        <h3>Pac Frens</h3>
-                        <p>NFT Collectibles</p> 
-                    </a>
-                </div>
-                <div class="span-4 m-span-6 s-span-12">
-                    <a href="bigbarnworld/index.html">
-                        <img src="bigbarnworld/product_thumbnail.jpg" alt="Big Barn World">
-                        <h3>Big Barn World</h3>
-                        <p>Character Collectibles</p>
-                    </a>
-                </div>
+
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="footer.js"></script>
-    <script src="nav.js"></script>
+    <template id="section-heading">
+        <div class="span-12 center"><h1></h1></div>
+    </template>
 
-<script src="https://unpkg.com/@rive-app/canvas"></script>
+    <template id="card-template">
+        <div class="span-4 m-span-6 s-span-12">
+            <a href="">
+            <img src="" alt="" loading="lazy">
+            <h3></h3>
+            <p></p>
+            </a>
+        </div>
+    </template>
+    
+    <script src="site.js"></script>
+    <script src="projects.js" data-grid=".grid.div-max-width"></script>
+
+    <script>
+      // Head assets live at the site root
+      Site.Head.init({ basePath: "" });
+      Site.Nav.init({ basePath: "" });
+      Site.Footer.init();
+    </script>
+
+    <script src="https://unpkg.com/@rive-app/canvas@2.24.0"></script>
 
     <script>
         const rainbow = new rive.Rive({
@@ -182,5 +115,6 @@
             },
         });
     </script>
+    
 </body>
 </html>

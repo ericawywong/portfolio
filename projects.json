@@ -1,0 +1,103 @@
+[
+  {
+    "title": "UX & Visual Design",
+    "cards": [
+      {
+        "href": "braintest/index.html",
+        "img": "braintest/product_thumbnail.jpg",
+        "alt": "BrainTest - Mobile App, Web App, Web design for early Alzheimer's detection",
+        "title": "BrainTest",
+        "desc": "Mobile App, Web App, Web design for early Alzheimer's detection",
+        "hero": {
+          "src": "braintest/product_hero.jpg",
+          "alt": "BrainTest - Mobile App, Web App, Web design for early Alzheimer's detection"
+        }
+      },
+      {
+        "href": "POG/index.html",
+        "img": "POG/product_thumbnail.jpg",
+        "alt": "",
+        "title": "POG",
+        "desc": "Internal SaaS management tool",
+        "hero": {
+          "src": "POG/product_hero.jpg",
+          "alt": "POG - Internal SaaS management tool"
+        }
+      },
+      {
+        "href": "just10/index.html",
+        "img": "just10/product_thumbnail.jpg",
+        "alt": "Just10 – A Social Network for Closer, Safer Connections",
+        "title": "Just10",
+        "desc": "A Social Network for Closer, Safer Connections",
+        "hero": {
+          "src": "just10/product_hero.jpg",
+          "alt": "Just10 – A Social Network for Closer, Safer Connections"
+        }
+      },
+      {
+        "href": "bestbuy/designprocess.html",
+        "img": "bestbuy/product_thumbnail_design_process.jpg",
+        "alt": "Best Buy - Streamlining Design Handoff",
+        "title": "Best Buy",
+        "desc": "Streamlining Design Handoff",
+        "slug": "bestbuy-process",
+        "hero": {
+          "src": "bestbuy/product_hero_design_process.jpg",
+          "alt": "Best Buy - Streamlining Design Handoff"
+        }
+      },
+      {
+        "href": "bestbuy/index.html",
+        "img": "bestbuy/product_thumbnail_enewsletter.jpg",
+        "alt": "Best Buy",
+        "title": "Best Buy",
+        "desc": "Responsive Redesign of Best Buy E-Newsletters",
+        "slug": "bestbuy-enewsletter",
+        "hero": {
+          "src": "bestbuy/product_hero_enewsletter.jpg",
+          "alt": "Best Buy Responsive Redesign of Best Buy E-Newsletters"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Illustrations",
+    "cards": [
+      {
+        "href": "LittleInkventure/index.html",
+        "img": "LittleInkventure/product_thumbnail.jpg",
+        "alt": "Little Inkventure - Personal project & social media content management",
+        "title": "Little Inkventure",
+        "desc": "Personal project & social media content management",
+        "hero": {
+          "src": "LittleInkventure/product_hero.jpg",
+          "alt": "Little Inkventure - Personal project & social media content management"
+        }
+      },
+      {
+        "href": "PacFrens/index.html",
+        "img": "PacFrens/product_thumbnail.jpg",
+        "alt": "PacFrens - NFT Collectibles",
+        "title": "PacFrens",
+        "desc": "NFT Collectibles",
+        "slug": "pacfrens",
+        "hero": {
+          "src": "PacFrens/product_hero.gif",
+          "alt": "PacFrens - NFT Collectibles"
+        }
+      },
+      {
+        "href": "bigbarnworld/index.html",
+        "img": "bigbarnworld/product_thumbnail.jpg",
+        "alt": "Big Barn World - Character Collectibles",
+        "title": "Big Barn World",
+        "desc": "Character Collectibles",
+        "hero": {
+          "src": "bigbarnworld/product_hero.png",
+          "alt": "Big Barn World - Character Collectibles"
+        }
+      }
+    ]
+  }
+]
