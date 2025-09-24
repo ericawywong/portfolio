@@ -92,13 +92,18 @@
 
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 17px;
-  line-height: 1.4;
+  font-size: 18px;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   background-color: var(--grey90);
@@ -181,7 +186,6 @@ h1, h2, h3 {
 
 h1 {
   text-decoration: underline solid var(--primary100);
-  text-underline-offset: 1rem;
   text-decoration-thickness: 0.45rem;
   margin-bottom: 2.44rem;
 }
@@ -209,8 +213,9 @@ ul {
 }
 
 .content-wrapper {
-  width: inherit;
   margin: inherit;
+  overflow-x: auto;
+  width: 100%;
 }
 
 .div-max-width {

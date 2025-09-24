@@ -8,6 +8,7 @@
         "alt": "BrainTest - Mobile App, Web App, Web design for early Alzheimer's detection",
         "title": "BrainTest",
         "desc": "Mobile App, Web App, Web design for early Alzheimer's detection",
+        "slug": "braintest",
         "hero": {
           "src": "braintest/product_hero.jpg",
           "alt": "BrainTest - Mobile App, Web App, Web design for early Alzheimer's detection"
@@ -19,6 +20,7 @@
         "alt": "",
         "title": "POG",
         "desc": "Internal SaaS management tool",
+        "slug": "pog",
         "hero": {
           "src": "POG/product_hero.jpg",
           "alt": "POG - Internal SaaS management tool"
@@ -30,6 +32,7 @@
         "alt": "Just10 – A Social Network for Closer, Safer Connections",
         "title": "Just10",
         "desc": "A Social Network for Closer, Safer Connections",
+        "slug": "just10",
         "hero": {
           "src": "just10/product_hero.jpg",
           "alt": "Just10 – A Social Network for Closer, Safer Connections"
@@ -70,6 +73,7 @@
         "alt": "Little Inkventure - Personal project & social media content management",
         "title": "Little Inkventure",
         "desc": "Personal project & social media content management",
+        "slug": "LittleInkventure",
         "hero": {
           "src": "LittleInkventure/product_hero.jpg",
           "alt": "Little Inkventure - Personal project & social media content management"
@@ -93,6 +97,7 @@
         "alt": "Big Barn World - Character Collectibles",
         "title": "Big Barn World",
         "desc": "Character Collectibles",
+        "slug": "bigbarnworld",
         "hero": {
           "src": "bigbarnworld/product_hero.png",
           "alt": "Big Barn World - Character Collectibles"

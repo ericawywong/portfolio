@@ -105,6 +105,7 @@ Usage:
         const p   = node.querySelector("p");
 
         if (c.classes) wrapper.className = c.classes;
+        if (c.slug) wrapper.classList.add(normalize(c.slug));
 
         buildLink(a, c.href, { target: c.target, rel: c.rel });
         buildImg(img, c.img, c.alt, { width: c.width, height: c.height });

@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="preload" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- critical anti-FOUC: must be inline so it applies before external CSS -->
+  <style>html.preload body{visibility:hidden; opacity:0}</style>
+
+  <!-- fonts first (optional but nice) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+
+  <!-- your CSS loaded by HTML (not JS) -->
+  <link rel="stylesheet" href="/default.css">
+  <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body id="portfolio">
+
+    <div class="container">
+
+        <div class="content-wrapper">
+            <div class="grid div-max-width">
+                    <div class="span-5 l-span-5 m-span-4 s-start-2-span-4 xs-span-6">
+                        <img src="about-me-cats.png">
+                    </div>
+                    <div class="span-7 l-span-7 m-span-8 s-start-2-span-10 about">
+                        <h1>Wanna know more about our human?</h1>
+                    </div>
+                    <div class="start-3-span-7 l-start-3-span-8 s-start-2-span-10">
+                        <h2>About Me</h2>
+<p>Hi, I’m Erica Wong — a product designer with a love for solving messy problems and turning them into clear, intuitive experiences.</p>
+
+<p>I earned my BA in Interactive Arts & Technology from Simon Fraser University and began my career at a design agency in Hong Kong. The experience sharpened my skills and exposed me to diverse projects, but I eventually returned home to Vancouver — I missed my family, the city, and yes, even the rain 🌧️.</p>
+
+<p>Since then, I’ve worked across industries — from fast-paced retail and e-commerce to tech startups and established companies — designing everything from responsive websites to mobile apps to playful in-game collectibles.</p>
+
+<p>Outside of work, I’m a proud cat parent to Gatsby & Vessi, enjoy drawing, a good movie / show (favorite: <em>Nightmare Before Christmas</em> 🎃, Dexter 🩸), and always tea over coffee.</p>
+
+<p>A Raincouver resident originally from Hong Kong, I speak both Cantonese and Mandarin and bring that cross-cultural perspective into my work.</p>
+
+<p>Thanks for stopping by 🙂.</p>
+
+                    <ul class="icons-links">
+                        <li><a href="mailto:ericawyw@gmail.com" class="email" target="_blank"></a></li>
+                    </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="site.js"></script>
+
+    <script>
+      // Head assets live at the site root
+      Site.Head.init({ basePath: "" });
+      Site.Nav.init({ basePath: "" });
+      Site.Footer.init();
+    </script>
+    
+</body>
+</html>
