@@ -296,4 +296,9 @@
     window.Site.Transitions.init({});
     // window.Site.ProjectNav.init({ jsonPath: "...", basePath: "..." }); // call this per-page
   });
+
+  window.addEventListener("pageshow", () => {
+  document.documentElement.classList.remove("leaving");
+});
+
 })();
