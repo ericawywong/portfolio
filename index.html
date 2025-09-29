@@ -1,120 +1,142 @@
 <!doctype html>
-<html class="preload" lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" class="preload">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Erica — Product Designer. Portfolio featuring product design, UI, and front-end friendly case studies."
+    />
+    <!-- Critical: prevent FOUC; keep inline -->
+    <style>
+      html.preload body { visibility: hidden; opacity: 0; }
+    </style>
 
-  <!-- critical anti-FOUC: must be inline so it applies before external CSS -->
-  <style>html.preload body{visibility:hidden; opacity:0}</style>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
 
-  <!-- fonts first (optional but nice) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
-
-  <!-- your CSS loaded by HTML (not JS) -->
-  <link rel="stylesheet" href="/default.css">
-  <link rel="stylesheet" href="/styles.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Erica — Product Designer</title>
   </head>
   <body id="portfolio">
+    <!-- Landmark header (nav injected via JS) -->
+    <header id="site-header" role="banner"></header>
 
-    <div class="container">
+    <main id="main" class="container">
+      <div class="content-wrapper">
+        <div class="grid max-width">
+          <section class="section profile" aria-labelledby="intro-title">
+            <h1 id="intro-title">
+              <span aria-hidden="true">👋🏻</span> I’m Erica, <br />a Product Designer.
+            </h1>
+            <p>
+              Experienced in front-end coding 👩🏻‍💻; I craft human-centered journeys infused with
+              <span>
+                engaging visuals
+                <canvas
+                  id="Rainbow"
+                  style="width: 32px; height: 32px; vertical-align: text-top;"
+                >
+                  Rainbow animation
+                </canvas>
+              </span>
+              &
+              <span>
+                empathy
+                <canvas
+                  id="Emoji"
+                  style="width: 32px; height: 32px; vertical-align: text-top;"
+                >
+                  Smiling emoji animation
+                </canvas>
+              </span>
+            </p>
+          </section>
 
-        <div class="content-wrapper div-max-width">
-            <div class="profile">
-                <div>
-                <h1><div class="xs-hide">👋🏻</div> I'm Erica, <br>a Product Designer.</h1>
-                <p>Experienced in front-end coding 👩🏻‍💻; I craft human-centered journeys infused with <span>engaging visuals <canvas id="Rainbow" style="width: 32px; height: 32px; vertical-align: text-top;" alt="Rainbow"></canvas></span> & <span>empathy <canvas id="Emoji" style="width: 32px; height: 32px; vertical-align: text-top;" alt="Emoji"></canvas></span></p>
-                </div>
+          <!-- Project cards mount here -->
+          <section
+            class="section card"
+            aria-labelledby="work-heading"
+            aria-live="polite"
+          ></section>
+
+          <!-- Templates -->
+          <template id="section-heading">
+            <h2 id="work-heading" class="center">Selected Work</h2>
+          </template>
+
+          <template id="card-template">
+            <div>
+              <a href="">
+                <img src="" alt="" loading="lazy" />
+                <h3></h3>
+                <p></p>
+              </a>
             </div>
-
-            <div class="grid div-max-width">
-
-                <!-- <div class="woosh">
-                    <a href="woosh/index.html">
-                    <img src="woosh/product_thumbnail.jpg" alt="Woosh!">
-                    <h2>Woosh!</h2>
-                    <p>Web App, Web design & Branding for shared laundry in a condo</p>
-                    </a>
-                </div>
-
-                <div class="stagebites">
-                    <a href="stagebites/index.html">
-                    <img src="stagebites/product_thumbnail.jpg" alt="StageBites">
-                    <h2>StageBites</h2>
-                    <p>Mobile app designed for food ordering in theaters</p>
-                    </a>
-                </div>
-
-                <div class="fcknclub">
-                    <a href="FCKNClub/index.html">
-                        <img src="FCKNClub/product_thumbnail.jpg" alt="FCKNClub">
-                        <h2>FCKNClub</h2>
-                        <p>NFT project with the Fried Chicken Club</p>
-                    </a>
-                </div>
-
-                <div class="just10">
-                    <a href="just10/index.html">
-                        <img src="just10/product_thumbnail.jpg" alt="Just 10">
-                        <h3>Just 10</h3>
-                        <p>Mobile App, Web App, Web design for close friends</p>
-                    </a>
-                </div> -->
-
-            </div>
+          </template>
         </div>
-    </div>
+      </div>
+    </main>
 
-    <template id="section-heading">
-        <div class="span-12 center"><h1></h1></div>
-    </template>
+    <footer id="site-footer" role="contentinfo"></footer>
 
-    <template id="card-template">
-        <div class="span-4 m-span-6 s-span-12">
-            <a href="">
-            <img src="" alt="" loading="lazy">
-            <h3></h3>
-            <p></p>
-            </a>
-        </div>
-    </template>
-    
-    <script src="site.js"></script>
-    <script src="projects.js" data-grid=".grid.div-max-width"></script>
-
-    <script>
-      // Head assets live at the site root
-      Site.Head.init({ basePath: "" });
-      Site.Nav.init({ basePath: "" });
-      Site.Footer.init();
+    <!-- Core scripts -->
+    <script src="site.js" defer></script>
+    <script src="projects.js" defer data-grid=".card"></script>
+    <script defer>
+      // Initialize site shell after DOM is ready
+      document.addEventListener('DOMContentLoaded', () => {
+        Site.Head.init({ basePath: "" });
+        Site.Nav.init({ basePath: "" });
+        Site.Footer.init();
+      });
     </script>
 
-    <script src="https://unpkg.com/@rive-app/canvas@2.24.0"></script>
+    <!-- Rive (separate for caching) -->
+    <script src="https://unpkg.com/@rive-app/canvas@2.24.0" defer></script>
+    <script defer>
+      // Mount Rive animations if available
+      window.addEventListener('DOMContentLoaded', () => {
+        if (!window.rive) return;
 
-    <script>
-        const rainbow = new rive.Rive({
-            src: "index.riv",
-            canvas: document.getElementById("Rainbow"),
+        const rainbowCanvas = document.getElementById('Rainbow');
+        const emojiCanvas = document.getElementById('Emoji');
+
+        if (rainbowCanvas) {
+          const rainbow = new rive.Rive({
+            src: 'index.riv',
+            canvas: rainbowCanvas,
             autoplay: true,
-            artboard: "Rainbow", // Optional. If not supplied the default is selected
-            stateMachines: "StateMachine1",
-            onLoad: () => {
-            rainbow.resizeDrawingSurfaceToCanvas();
-            },
-        });
-        const emoji = new rive.Rive({
-            src: "index.riv",
-            canvas: document.getElementById("Emoji"),
+            artboard: 'Rainbow',
+            stateMachines: 'StateMachine1',
+            onLoad: () => rainbow.resizeDrawingSurfaceToCanvas(),
+          });
+        }
+
+        if (emojiCanvas) {
+          const emoji = new rive.Rive({
+            src: 'index.riv',
+            canvas: emojiCanvas,
             autoplay: true,
-            artboard: "Emoji", // Optional. If not supplied the default is selected
-            stateMachines: "StateMachine2",
-            onLoad: () => {
-            emoji.resizeDrawingSurfaceToCanvas();
-            },
-        });
+            artboard: 'Emoji',
+            stateMachines: 'StateMachine2',
+            onLoad: () => emoji.resizeDrawingSurfaceToCanvas(),
+          });
+        }
+      });
     </script>
-    
-</body>
+
+    <noscript>
+      <style>
+        html.preload body { visibility: visible; opacity: 1; }
+      </style>
+    </noscript>
+  </body>
 </html>

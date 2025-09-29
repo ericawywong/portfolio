@@ -92,7 +92,7 @@ Usage:
     for (const section of sections) {
       // Heading
       const headNode = tplHead.content.cloneNode(true);
-      headNode.querySelector("h1").textContent = section.title || "";
+      headNode.querySelector("h2").textContent = section.title || "";
       frag.appendChild(headNode);
 
       // Cards

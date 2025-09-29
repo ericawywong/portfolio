@@ -68,10 +68,10 @@
 
       const navHTML = `
         <nav>
-          <div class="nav-container">
+          <div class="nav-container remove-padding-right">
             <a class="logo" href="${basePath}index.html"></a>
           </div>
-          <div class="nav-container">
+          <div class="nav-container remove-padding-left">
             <ul>
               <li><a class="about-me" href="${basePath}about-me.html"></a></li>
               <li><a class="instagram" href="https://www.instagram.com/littleinkventure/" target="_blank" rel="noopener noreferrer"></a></li>
@@ -271,8 +271,9 @@
         const { prev, next } = findNeighbors(workingList, idx, !!loop);
 
         // render
+        //nav-container <- project-nav__inner
         containerEl.innerHTML = `
-          <div class="project-nav__inner">
+          <div class="nav-container"> 
             ${buildLink(prev, "prev", basePath)}
             ${buildLink(next, "next", basePath)}
           </div>

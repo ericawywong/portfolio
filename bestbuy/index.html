@@ -1,189 +1,280 @@
 <!doctype html>
-<html class="preload" lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" class="preload">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Case Study: Best Buy eNewsletters Redesign — mobile-first newsletter system, process, and outcomes."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>Best Buy eNewsletters — Case Study</title>
 
-  <!-- critical anti-FOUC: must be inline so it applies before external CSS -->
-  <style>html.preload body{visibility:hidden; opacity:0}</style>
+    <!-- Critical: prevent FOUC -->
+    <style>
+      html.preload body { visibility: hidden; opacity: 0; }
+    </style>
 
-  <!-- fonts first (optional but nice) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
 
-  <!-- your CSS loaded by HTML (not JS) -->
-  <link rel="stylesheet" href="/default.css">
-  <link rel="stylesheet" href="/styles.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/styles.css" />
   </head>
-<body id="bestbuy-enewsletter">
+  <body id="bestbuy-enewsletter" style="--gt-color: var(--bestbuy);">
+    <!-- Landmark header (nav injected via JS) -->
+    <header id="site-header" role="banner"></header>
 
-    <div class="container">
+    <main id="main" class="container">
+      <div class="content-wrapper">
+        <div class="grid max-width">
+          <!-- Intro -->
+          <section class="section introduction" aria-labelledby="title">
+            <h1 id="title">Case Study: Best Buy eNewsletters Redesign</h1>
+            <p>
+              At Best Buy, I worked as a solo designer on the digital newsletters team, contributing
+              to UI, production, and coordination efforts. As part of a cross-functional team
+              including art directors, merchandisers, and marketers, I identified an opportunity to
+              modernize a legacy email format that no longer served users in a mobile-first world.
+            </p>
+          </section>
 
-        <div class="content-wrapper">
-
-            <div class="grid div-max-width">
-
-                <div class="introduction">
-                    <h1>Case Study: <br> Best Buy E-Newsletters Redesign</h1>
-                    <p>At Best Buy, I worked as a solo designer on the digital newsletters team, contributing to UI, production, and coordination efforts. As part of a cross-functional team including art directors, merchandisers, and marketers, I identified an opportunity to modernize a legacy email format that no longer served users in a mobile-first world.</p>
-                </div>
-
-                <div class="fact-sheet">
-                    <div class="multi-column-2">
-                        <div class="my-role">
-                            <h2>My Role</h2>
-                            <ul>
-                                <li>UI Design</li>
-                                <li>Coordination</li>
-                                <li>Concepting</li>
-                                <li>A/B Testing</li>
-                                <li>Documentation</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="tools-used">
-                            <h2>Tools</h2>
-                            <ul class="icons-tools">
-                                <li class="adobe-ps">Photoshop</li>
-                                <li class="adobe-ai">Illustrator</li>
-                                <li class="microsoft">Microsoft Office</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sticky-block">
-                    <div class="grid">
-                        <div class="m-span-12 image-block">
-                            <img src="BBYweekly_old.jpg" loading="lazy">
-                        </div>
-                        <div class="challenge text-block">
-                            <h2>🔍 Challenge: Desktop-Centric Design in a Mobile Era</h2>
-                            <p>The existing newsletter layout, originally built for desktop viewing, struggled on mobile screens. Common issues included:</p>
-
-                            <ul>
-                                <li>Dense blocks of copy</li>
-                                <li>Small, low-impact images</li>
-                                <li>Overcrowded layouts with minimal visual breathing room</li>
-                                <li>Poor mobile usability and touch interactions</li>
-                            </ul>
-            
-                            <p>These problems led to low ↘ engagement rates and a suboptimal  user experience, highlighting the need for a responsive redesign.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="insight" style="--colored-block-color: var(--project-bestbuy);">
-                    <div class="grid">
-                        <div>
-                            <h2>💡 Insight: Design for Mobile-First Behavior</h2>
-                            <p>Data and stakeholder feedback confirmed that most users were accessing newsletters on mobile. We also saw that users skimmed content quickly, focused on visuals, and interacted primarily through taps.</p>
-                            <ul>
-                                <li>Mobile opens accounted for over 60% of total email views</li>
-                                <li>Users spent an average of 8 seconds on the email before clicking through or closing</li>
-                                <li>Click-through rates were highest on visually engaging elements like large images and buttons</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="sticky-block">
-                    <div class="grid">
-                        <div class="solution text-block" style="--colored-block-color: var(--project-bestbuy);">
-                            <div class="grid">
-                                <div>
-                                    <h2>Solution: A Single, Adaptive Layout Built for Engagement</h2>
-                                    <p>I led the design of a responsive newsletter system that works seamlessly on both desktop and mobile:</p>
-                                    <ul>
-                                        <li>Simplified layout for faster scanning</li>
-                                        <li>Visual consistency with the Best Buy e-commerce site</li>
-                                        <li>Reduced copy, highlighting only key messaging</li>
-                                        <li>Motion graphics added to increase interaction</li>
-                                        <li>Enlarged imagery & CTAs for mobile users</li>
-                                        <li>One adaptive version (vs. multiple builds), saving both time and cost</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="m-span-12 image-block">
-                            <img src="BBYweekly_new.jpg" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="insight" style="--colored-block-color: var(--project-bestbuy);">
-                    <div class="grid">
-                        <div>
-                            <h2>Validation: Real-World A/B Testing</h2>
-                            <p>To test the impact, we ran A/B tests in collaboration with a third-party agency. Two email versions (old vs. new) were sent to randomly selected, equal-sized Canadian subscriber segments to measure performance differences.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="display-image center">
-                    <h2>Old Design</h2>
-                    <figure>
-                        <img src="bestbuy-3.png" alt="Legacy Best Buy newsletter with dense copy and small images" loading="lazy">
-  <figcaption>Figure 1. Legacy desktop-centric layout prior to redesign.</figcaption>
-                    </figure>
-                </div>
-
-                <div class="display-image center">
-                    <h2>New Design</h2>
-                    <figure>
-                        <img src="bestbuy-2.png" alt="Mobile-first redesign with larger imagery and CTAs" loading="lazy">
-  <figcaption>Figure 2. Mobile-first redesign; A/B tested (+20% engagement across rounds).</figcaption>
-</figure>
-                </div>
-
-                <div class="impact" style="--colored-block-color: var(--project-bestbuy);">
-                    <div class="grid">
-                        <div>
-                            <h2>🌟 Impact: Results That Scaled</h2>
-                            <ul>
-                                <li>✅ Developed one layout that eliminated the need for separate desktop/mobile designs</li>
-                                <li>📈 Achieved a 20% increase in engagement rate across multiple testing rounds</li>
-                                <li>💸 Reduced development overhead while improving visual consistency</li>
-                                <li>🚀 Created a repeatable framework for future email campaigns</li> </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="why-matters">
-                    <h2>Why This Matters</h2>
-                    <p>This redesign was more than a facelift. It was a system-level solution tailored to modern user behavior, brand alignment, and measurable performance—demonstrating how thoughtful design can bridge creativity and business value.</p>
-                </div>
-
+          <!-- Fact sheet -->
+          <section class="section section--two fact-sheet" aria-labelledby="facts">
+            <div class="gt-col">
+              <h4>Responsibilities</h4>
+              <ul>
+                <li>UI Design</li>
+                <li>Coordination</li>
+                <li>Concepting</li>
+                <li>A/B Testing</li>
+                <li>Documentation</li>
+              </ul>
             </div>
+            <div class="gt-col">
+              <h4>Tools</h4>
+              <ul class="tools">
+                <li><img class="adobe-ps" alt="" /> Photoshop</li>
+                <li><img class="adobe-ai" alt="" /> Illustrator</li>
+                <li><img class="microsoft" alt="" /> Microsoft Office</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Challenge -->
+          <section class="sticky-section" aria-labelledby="challenge">
+            <div class="sticky__media">
+              <img
+                src="BBYweekly_old.jpg"
+                alt="Previous newsletter layout — dense copy, small images"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <aside class="challenge sticky__aside">
+              <h2 id="challenge">🔍 Challenge: Desktop-Centric Design in a Mobile Era</h2>
+              <p>
+                The existing newsletter layout, originally built for desktop viewing, struggled on
+                mobile screens. Common issues included:
+              </p>
+              <ul>
+                <li>Dense blocks of copy</li>
+                <li>Small, low-impact images</li>
+                <li>Overcrowded layouts with minimal visual breathing room</li>
+                <li>Poor mobile usability and touch interactions</li>
+              </ul>
+              <p>
+                These problems led to low engagement rates and a suboptimal user experience,
+                highlighting the need for a responsive redesign.
+              </p>
+            </aside>
+          </section>
+
+          <!-- Insight -->
+          <section
+            class="section section--border-dash insight"
+            aria-labelledby="insight"
+            style="--gt-bg: var(--primary100);"
+          >
+            <div class="section__inner">
+              <h2 id="insight">💡 Insight: Design for Mobile-First Behavior</h2>
+              <p>
+                Data and stakeholder feedback confirmed that most users were accessing newsletters on
+                mobile. We also saw that users skimmed content quickly, focused on visuals, and
+                interacted primarily through taps.
+              </p>
+              <ul>
+                <li>Mobile opens accounted for over 60% of total email views</li>
+                <li>Users spent an average of 8 seconds on the email before clicking through or closing</li>
+                <li>Click-through rates were highest on visually engaging elements like large images and buttons</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Solution -->
+          <section class="sticky-section" aria-labelledby="solution">
+            <aside
+              class="sticky__aside section--bg"
+              style="--gt-bg: var(--bestbuy); --gt-color: var(--white100);"
+            >
+              <div class="section__inner">
+                <h2 id="solution">Solution: A Single, Adaptive Layout Built for Engagement</h2>
+                <p>
+                  I led the design of a responsive newsletter system that works seamlessly on both
+                  desktop and mobile:
+                </p>
+                <ul>
+                  <li>Simplified layout for faster scanning</li>
+                  <li>Visual consistency with the Best Buy e-commerce site</li>
+                  <li>Reduced copy, highlighting only key messaging</li>
+                  <li>Motion graphics added to increase interaction</li>
+                  <li>Enlarged imagery &amp; CTAs for mobile users</li>
+                  <li>One adaptive version (vs. multiple builds), saving both time and cost</li>
+                </ul>
+              </div>
+            </aside>
+            <div class="sticky__media">
+              <img
+                src="BBYweekly_new.jpg"
+                alt="New responsive newsletter layout — larger visuals and clearer hierarchy"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </section>
+
+          <!-- Validation -->
+          <section
+            class="section section--border-solid outcome"
+            aria-labelledby="validation"
+            style="--gt-bg: var(--bestbuy);"
+          >
+            <div class="section__inner">
+              <h2 id="validation">Validation: Real-World A/B Testing</h2>
+              <p>
+                To test the impact, we ran A/B tests in collaboration with a third-party agency. Two
+                email versions (old vs. new) were sent to randomly selected, equal-sized Canadian
+                subscriber segments to measure performance differences.
+              </p>
+            </div>
+          </section>
+
+          <!-- Old design -->
+          <section class="section media-display" aria-labelledby="old-design">
+            <h4 id="old-design" class="center">Old Design</h4>
+            <figure>
+              <img
+                src="bestbuy-3.png"
+                alt="Legacy Best Buy newsletter with dense copy and small images"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Figure 1. Legacy desktop-centric layout prior to redesign.</figcaption>
+            </figure>
+          </section>
+
+          <!-- New design -->
+          <section class="section media-display" aria-labelledby="new-design">
+            <h4 id="new-design" class="center">New Design</h4>
+            <figure>
+              <img
+                src="bestbuy-2.png"
+                alt="Mobile-first redesign with larger imagery and CTAs"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                Figure 2. Mobile-first redesign; A/B tested (+20% engagement across rounds).
+              </figcaption>
+            </figure>
+          </section>
+
+          <!-- Outcome -->
+          <section
+            class="section section--bg outcome"
+            aria-labelledby="outcome"
+            style="--gt-bg: var(--bestbuy); --gt-color: var(--white100);"
+          >
+            <div class="section__inner">
+              <h2 id="outcome">🌟 Outcome: Results That Scaled</h2>
+              <ul>
+                <li>✅ Developed one layout that eliminated the need for separate desktop/mobile designs</li>
+                <li>📈 Achieved a 20% increase in engagement rate across multiple testing rounds</li>
+                <li>💸 Reduced development overhead while improving visual consistency</li>
+                <li>🚀 Created a repeatable framework for future email campaigns</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Process image -->
+          <section class="section" aria-labelledby="why-matters">
+            <figure>
+              <img
+                src="bestbuy-enewsletter-why-matter.jpg"
+                alt="Process illustration"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Image from <a href="https://www.pexels.com/">Pexels</a></figcaption>
+            </figure>
+          </section>
+
+          <!-- Closing -->
+          <section class="section" aria-labelledby="closing">
+            <h2 id="closing">Why This Matters</h2>
+            <p>
+              This redesign was more than a facelift. It was a system-level solution tailored to
+              modern user behavior, brand alignment, and measurable performance—demonstrating how
+              thoughtful design can bridge creativity and business value.
+            </p>
+          </section>
         </div>
-    </div>
+      </div>
+    </main>
 
-   <nav class="project-nav"></nav>
+    <!-- Project nav injected via JS -->
+    <nav class="project-nav" aria-label="Project navigation"></nav>
 
+    <!-- Templates -->
     <template id="hero-template">
-    <div class="product-hero">
-        <img src="" alt="">
-    </div>
+      <div class="product-hero">
+        <img src="" alt="" />
+      </div>
     </template>
-    
-    <script src="../site.js"></script>
+
+    <!-- Core scripts -->
+    <script src="../site.js" defer></script>
+    <script
+      src="../projects.js"
+      defer
+      data-json="../projects.json"
+      data-base-path="../"
+    ></script>
     <script>
-    Site.Head.init({ basePath: "../" });
-    Site.Nav.init({ basePath: "../" });
-    Site.Footer.init();
-    Site.ProjectNav.init({
-        container: ".project-nav",
-        jsonPath: "../projects.json",
-        basePath: "../",
-        scope: "all",  // or "section" if you only want within the same section
-        loop: true
-    });
+      // Initialize after DOM is parsed
+      document.addEventListener('DOMContentLoaded', () => {
+        Site.Head.init({ basePath: "../" });
+        Site.Nav.init({ basePath: "../" });
+        Site.Footer.init();
+        Site.ProjectNav.init({
+          container: ".project-nav",
+          jsonPath: "../projects.json",
+          basePath: "../",
+          scope: "all", // or "section" to limit to same section
+          loop: true,
+        });
+      });
     </script>
 
-    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
-
-</body>
-
+    <noscript>
+      <style>
+        html.preload body { visibility: visible; opacity: 1; }
+      </style>
+    </noscript>
+  </body>
 </html>

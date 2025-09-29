@@ -1,125 +1,154 @@
 <!doctype html>
-<html class="preload" lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" class="preload">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>PacFrens — NFT Collection</title>
 
-  <!-- critical anti-FOUC: must be inline so it applies before external CSS -->
-  <style>html.preload body{visibility:hidden; opacity:0}</style>
+    <!-- Critical: prevent FOUC; keep inline -->
+    <style>html.preload body { visibility: hidden; opacity: 0; }</style>
 
-  <!-- fonts first (optional but nice) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
 
-  <!-- your CSS loaded by HTML (not JS) -->
-  <link rel="stylesheet" href="/default.css">
-  <link rel="stylesheet" href="/styles.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/default.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
-<body id="pacfrens">
+  <body id="pacfrens" style="--gt-color: var(--pacfrens);">
+    <!-- Landmark header (nav injected via JS) -->
+    <header id="site-header" role="banner"></header>
 
-<div class="container">
-        <div class="content-wrapper">
-            
-        <div class="grid div-max-width">
+    <main id="main" class="container">
+      <div class="content-wrapper">
+        <div class="grid max-width">
+          <!-- Intro -->
+          <section class="section introduction" aria-labelledby="title">
+            <h1 id="title">NFT Collection: PacFrens</h1>
+            <p>
+              I collaborated with a friend on this fun and experimental side project. Inspired by the
+              success of $PacMoon, we set out to create a playful NFT collection called PacFrens.
+            </p>
+            <p>
+              <a href="https://blastr.xyz/pacfrens" class="text" target="_blank" rel="noopener">Visit PacFrens on Blastr →</a>
+            </p>
+          </section>
 
-            <div class="introduction">
-                <h1>NFT Collection: PacFrens</h1>
-                <p>I collaborated with a friend on this fun and experimental side project. Inspired by the success of $PacMoon, we set out to create a playful NFT collection called PacFrens.</p>
-                <ul class="icons-links">
-                    <li><a href="https://blastr.xyz/pacfrens" class="blastr" target="_blank"></a></li>
-                </ul>
+          <!-- Fact sheet -->
+          <section class="section section--two fact-sheet" aria-labelledby="facts">
+            <div class="gt-col">
+              <h4>Responsibilities</h4>
+              <ul>
+                  <li>Concepting</li>
+                  <li>Lead NFT artist</li>
+              </ul>
             </div>
-
-            <div class="fact-sheet">
-                <div class="multi-column-2">
-                    <div class="my-role">
-                        <h2>My Role</h2>
-                        <ul>
-                            <li>Concepting</li>
-                            <li>Lead NFT artist</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tools-used">
-                        <h2>Tools</h2>
-                        <ul class="icons-tools">
-                            <li class="procreate">Procreate</li>
-                            <li class="figma">Figma</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="gt-col">
+              <h4>Tools</h4>
+              <ul class="tools">
+                  <li><img class="procreate" alt="" />Procreate</li>
+                  <li><img class="figma" alt="" />Figma</li>
+              </ul>
             </div>
+          </section>
 
-            <div class="display-image">
-                <ul class="multi-column-4">
-                    <li><img src="PacFrens-5.jpg" alt="PacFrens character variant" loading="lazy"></li>
-                    <li><img src="PacFrens-1.jpg" alt="PacFrens character variant" loading="lazy"></li>
-                    <li><img src="PacFrens-2.jpg" alt="PacFrens character variant" loading="lazy"></li>
-                    <li><img src="PacFrens-3.jpg" alt="PacFrens character variant" loading="lazy"></li>                        <li><img src="PacFrens-4.jpg" alt="PacFrens character variant" loading="lazy"></li>
-                    <!-- <li><img src="PacFrens-6.jpg" alt="PacFrens character variant" loading="lazy"></li> -->
-                    <li><img src="PacFrens-7.jpg" alt="PacFrens character variant" loading="lazy"></li>
-                    <li><img src="PacFrens-9.jpg" alt="PacFrens character variant" loading="lazy"></li>                        <li><img src="PacFrens-8.jpg" alt="PacFrens character variant" loading="lazy"></li>
-                </ul>
-            </div>
+          <!-- Gallery -->
+          <section class="section section--four media-display" aria-labelledby="gallery">
+            <!-- <h2 id="gallery" class="visually-hidden">Gallery</h2> -->
+              <div class="gt-col"><img src="PacFrens-5.jpg" alt="PacFrens character variant" loading="lazy" /></div>
+              <div class="gt-col"><img src="PacFrens-1.jpg" alt="PacFrens character variant" loading="lazy" /></div>
+              <div class="gt-col"><img src="PacFrens-2.jpg" alt="PacFrens character variant" loading="lazy" /></div>
+              <div class="gt-col"><img src="PacFrens-3.jpg" alt="PacFrens character variant" loading="lazy" /></div>
+              <div class="gt-col"><img src="PacFrens-4.jpg" alt="PacFrens character variant" loading="lazy" /></div>
+              <div class="gt-col"><img src="PacFrens-7.jpg" alt="PacFrens character variant" loading="lazy" /></div>
+              <div class="gt-col"><img src="PacFrens-9.jpg" alt="PacFrens character variant" loading="lazy" /></div>
+              <div class="gt-col"><img src="PacFrens-8.jpg" alt="PacFrens character variant" loading="lazy" /></div>
+          </section>
 
-            <div class="general-text">
-                <h2>Steps</h2>
+          <!-- Steps -->
+          <section class="section section--border-dash insight"
+            style="--gt-bg: var(--primary100);" aria-labelledby="steps">
+            <div class="section__inner">
+                <h2 id="steps">Steps</h2>
                 <ul>
-                    <li>Designed the PacFrens characters entirely in Procreate, giving them a bold, approachable aesthetic.</li>
-                        <li>Used Figma to mock up variations and experiment with how they might be displayed on marketplaces.</li>
-                        <li>Explored rarity concepts (color swaps, accessories, poses) to add depth to the collectible idea.</li>
-                        <li>Created a simple website mockup for community engagement and marketing exploration.</li>
+                <li>
+                    Designed the PacFrens characters entirely in Procreate, giving them a bold, approachable aesthetic.
+                </li>
+                <li>Used Figma to mock up variations and experiment with how they might be displayed on marketplaces.</li>
+                <li>Explored rarity concepts (color swaps, accessories, poses) to add depth to the collectible idea.</li>
+                <li>Created a simple website mockup for community engagement and marketing exploration.</li>
                 </ul>
             </div>
+          </section>
 
-            <div class="impact" style="--colored-block-color: var(--project-pacfrens);">
-                <div class="grid">
-                    <div>
-                        <h2>🌟 Result</h2>
-                        <ul>
-                            <li>✅ Gained hands-on experience in **NFT art direction** and design pipelines</li>
-                            <li>🎨 Built a fun, themed collection that captured our original creative intent</li>
-                            <li>📚 Learned practical lessons about **Web3 marketing, community-building, and NFT launch cycles**</li>
-                            <li>😊 Despite limited market traction, we truly enjoyed every step of the creative journey</li>
-                        </ul>
-                    </div>
-                </div>
+          <!-- Impact -->
+          <section
+            class="section section--bg outcome"
+            aria-labelledby="outcome"
+            style="--gt-bg: var(--pacfrens); --gt-color: var(--white100);">
+            <div class="section__inner">
+                <h2 id="result">🌟 Outcome</h2>
+                <ul>
+                  <li>✅ Gained hands-on experience in **NFT art direction** and design pipelines</li>
+                  <li>🎨 Built a fun, themed collection that captured our original creative intent</li>
+                  <li>📚 Learned practical lessons about **Web3 marketing, community-building, and NFT launch cycles**</li>
+                  <li>😊 Despite limited market traction, we truly enjoyed every step of the creative journey</li>
+                </ul>
             </div>
+          </section>
 
-            <!-- <div class="general-text">
-                    <h2>Thoughts</h2>
-                    <p>Although the project itself wasn’t commercially successful, we had a great time bringing it to life — and the process gave us valuable insight into the creative and technical aspects of NFT artwork, collectibles, and Web3 promotion strategies.</p>
-            </div> -->
-
+          <!-- Thoughts (kept commented, normalized style) -->
+          <!--
+          <section class="section general-text" aria-labelledby="thoughts">
+            <h2 id="thoughts">Thoughts</h2>
+            <p>
+              Although the project itself wasn’t commercially successful, we had a great time bringing it to life — and the
+              process gave us valuable insight into the creative and technical aspects of NFT artwork, collectibles, and
+              Web3 promotion strategies.
+            </p>
+          </section>
+          -->
         </div>
-    </div>
-</div>
+      </div>
+    </main>
 
-    <nav class="project-nav"></nav>
+    <!-- Project nav injected via JS -->
+    <nav class="project-nav" aria-label="Project navigation"></nav>
 
+    <!-- Templates -->
     <template id="hero-template">
-    <div class="product-hero">
-        <img src="" alt="">
-    </div>
+      <div class="product-hero">
+        <img src="" alt="" />
+      </div>
     </template>
-    
-    <script src="../site.js"></script>
-    <script>
-    Site.Head.init({ basePath: "../" });
-    Site.Nav.init({ basePath: "../" });
-    Site.Footer.init();
-    Site.ProjectNav.init({
-        container: ".project-nav",
-        jsonPath: "../projects.json",
-        basePath: "../",
-        scope: "all",  // or "section" if you only want within the same section
-        loop: true
-    });
+
+    <!-- Core scripts -->
+    <script src="../site.js" defer></script>
+    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
+    <script defer>
+      // Initialize after DOM is parsed
+      document.addEventListener('DOMContentLoaded', () => {
+        Site.Head.init({ basePath: "../" });
+        Site.Nav.init({ basePath: "../" });
+        Site.Footer.init();
+        Site.ProjectNav.init({
+          container: ".project-nav",
+          jsonPath: "../projects.json",
+          basePath: "../",
+          scope: "all", // or "section" to limit to same section
+          loop: true,
+        });
+      });
     </script>
 
-    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
-</body>
-
+    <noscript>
+      <style>html.preload body { visibility: visible; opacity: 1; }</style>
+    </noscript>
+  </body>
 </html>

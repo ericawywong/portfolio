@@ -1,185 +1,311 @@
 <!doctype html>
-<html class="preload" lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" class="preload">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Case Study: Streamlining Design Handoff for E-Newsletters — process, structure, and impact."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>Best Buy eNewsletters — Case Study</title>
 
-  <!-- critical anti-FOUC: must be inline so it applies before external CSS -->
-  <style>html.preload body{visibility:hidden; opacity:0}</style>
+    <!-- Critical: prevent FOUC -->
+    <style>
+      html.preload body { visibility: hidden; opacity: 0; }
+    </style>
 
-  <!-- fonts first (optional but nice) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
 
-  <!-- your CSS loaded by HTML (not JS) -->
-  <link rel="stylesheet" href="/default.css">
-  <link rel="stylesheet" href="/styles.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/styles.css" />
   </head>
-<body id="bestbuy-process">
+  <body id="bestbuy-process" style="--gt-color: var(--bestbuy);">
+    <!-- Landmark header (nav injected via JS) -->
+    <header id="site-header" role="banner"></header>
 
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="grid div-max-width">
+    <main id="main" class="container">
+      <div class="content-wrapper">
+        <div class="grid max-width">
+          <!-- Intro -->
+          <section class="section introduction" aria-labelledby="title">
+            <h1 id="title">Case Study: Streamlining Design Handoff for E-Newsletters</h1>
+            <p>
+              When I joined Best Buy as the solo designer on a newly formed team, I adopted the
+              existing workflow after consulting with PMs, CDs, ADs, marketers, and merchandisers.
+              The process worked—until volume grew. Soon, last-minute edits, scattered communication,
+              and costly revision cycles became the norm.
+            </p>
+          </section>
 
-                <div class="introduction">
-                    <h1>Case Study: <br> Streamlining Design Handoff for E-Newsletters</h1>
-                    <p>When I joined Best Buy as the solo designer on a newly formed team, I adopted the existing workflow after consulting with PMs, CDs, ADs, marketers, and merchandisers. The process worked—until volume grew. Soon, last-minute edits, scattered communication, and costly revision cycles became the norm.</p>
-                </div>
-
-                <div class="fact-sheet">
-                    <div class="multi-column-2">
-                        <div class="my-role">
-                            <h2>My Role</h2>
-                            <ul>
-                                <li>Sole Designer</li>
-                                <li>Workflow Designer</li>
-                                <li>Cross-functional Facilitator</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="icons-tools">
-                            <h2>Tools</h2>
-                            <ul>
-                                <li class="adobe-ps">Photoshop</li>
-                                <li class="adobe-ai">Illustrator</li>
-                                <li class="microsoft">Microsoft Office</li>
-                                <li>Online proofing platform</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="challenge">
-                    <h2>🔍 Challenge: Fragmented Feedback & Rising Costs</h2>
-                    <p>What began as a straightforward process—merchandisers submitting content two weeks before launch—became disorganized and reactive. Designers were inundated with edit requests via email, chat, and ad-hoc calls, often overlapping with final development.</p>
-                </div>
-
-                <div class="display-image">
-                    <img src="designprocess_old.png" loading="lazy">
-                </div>
-
-                <div class="span-12">
-                    <h2 class="center">As the team scaled, the issues compounded:</h2>
-                </div>
-
-                <div class="display-image">
-                    <ul class="multi-column-3 xs-span-12">
-                        <li>
-                            <img src="problem_lastminedits.png" class="add-margin-bottom reduce-image-size" loading="lazy">
-                            <h3 class="center">🕰️ Overtime hours</h3>
-                            <p class="center">Designers working late to accommodate sudden revisions</p>
-                        </li>
-                        <li>
-                            <img src="problem_stress.png" class="add-margin-bottom reduce-image-size" loading="lazy">
-                            <h3 class="center">😖 Burnout & stress</h3>
-                            <p class="center">Unpredictable workloads and communication breakdowns</p>
-                        </li>
-                        <li>
-                            <img src="problem_invoice.png" class="add-margin-bottom reduce-image-size" loading="lazy">
-                            <h3 class="center">💸 Increased costs</h3>
-                            <p class="center">Frequent revision rounds submitted to the outsourcing agency</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="insight" style="--colored-block-color: var(--project-bestbuy);">
-                    <div class="grid">
-                        <div>
-                            <h2>💡 Insight: Design Needs Structure to Scale</h2>
-                            <p>Observing the chaos, I realized that without centralized communication and enforced deadlines, the design process would remain reactive and expensive. The root issue wasn’t creativity—it was the lack of structure around it.</p>
-                            <p>With multiple departments involved—project managers, merchandisers, copywriters, developers, and designers—we needed a shared framework that enforced consistency, accountability, and clarity.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="solution" style="--colored-block-color: var(--project-bestbuy);">
-                    <div class="grid">
-                        <div>
-                            <h2>Solution: A 2-Week Sprint & Online Proofing</h2>
-                            <p>I introduced a structured two-week process with two fixed edit windows, supported by an online proofing tool to house all feedback in one place.</p> 
-                            <h3>Week 1: Review & Mockup</h3>
-                            <ul>
-                                <li>Merchandisers submit content (product info, pricing, copy)</li>
-                                <li>Designers create mockups</li>
-                                <li>Stakeholders give feedback in one scheduled, in-person meeting</li>
-                            </ul>
-                            <h3>Week 2: Finalization</h3>
-                            <ul>
-                                <li>Only typo-level edits permitted</li>
-                                <li>Mockups sent for localization</li>
-                                <li>Final assets handed off to developers</li>
-                            </ul>
-                            <p>Any feedback outside the proofing tool was no longer accepted—this maintained control and ensured accountability.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="display-image"><img src="designprocess_new.png" loading="lazy"></div>
-
-                <div class="challenge">
-                    <h2>Overcoming Implementation Hurdles</h2>
-                    <h3>Aligning Cross-Functional Teams</h3>
-                    <p>With so many hands involved, standardizing communication took deliberate effort. We worked across departments to ensure buy-in.</p>
-                    <h3>Navigating Change Resistance</h3>
-                    <p>Stakeholders were used to the old way of working. To smooth the transition:</p>
-                    <ul>
-                        <li>We tracked the source and timing of edits</li>
-                        <li>Held retrospectives every two e-newsletters</li>
-                        <li>Identified unnecessary revisions and removed them from future cycles</li>
-                    </ul>
-                </div>
-
-                <div class="impact" style="--colored-block-color: var(--project-bestbuy);">
-                    <div class="grid">
-                        <div>
-                            <h2>🌟 Impact: A Smarter, Calmer Design Workflow</h2>
-                            <ul>
-                                <li>✅ Production costs significantly reduced</li>
-                                <li>⏱️ Faster design-to-dev turnaround time</li>
-                                <li>📉 Last-minute changes dropped dramatically</li>
-                                <li>🗂️ All feedback captured in one place—no more missed edits</li>
-                                <li>😊 A healthier, more sustainable working environment for the team</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="why-matters">
-                    <h2>Lesson Learned</h2>
-                    <p>Good design isn’t only visual—it’s about structuring collaboration. By designing the process itself, we created clarity, predictability, and space for creativity.</p>
-                    <p>This case study reflects how UX thinking can extend beyond screens—into process design, collaboration, and team culture. It showcases leadership, operational problem-solving, and an ability to scale creative work through structure.</p>
-                </div>
-
+          <!-- Fact sheet -->
+          <section class="section section--two fact-sheet" aria-labelledby="facts">
+            <div class="gt-col">
+              <h4>Responsibilities</h4>
+              <ul>
+                <li>Sole Designer</li>
+                <li>Workflow Designer</li>
+                <li>Cross-functional Facilitator</li>
+              </ul>
             </div>
+            <div class="gt-col">
+              <h4>Tools</h4>
+              <ul class="tools">
+                <li><img class="adobe-ps" alt="" /> Photoshop</li>
+                <li><img class="adobe-ai" alt="" /> Illustrator</li>
+                <li><img class="microsoft" alt="" /> Microsoft Office</li>
+                <li>Online proofing platform</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Challenge -->
+          <section class="section challenge" aria-labelledby="challenge">
+            <h2 id="challenge">🔍 Challenge: Fragmented Feedback &amp; Rising Costs</h2>
+            <p>
+              What began as a straightforward process—merchandisers submitting content two weeks
+              before launch—became disorganized and reactive. Designers were inundated with edit
+              requests via email, chat, and ad-hoc calls, often overlapping with final development.
+            </p>
+          </section>
+
+          <!-- Current process (old) -->
+          <section class="section media-display" aria-labelledby="old-process">
+            <figure>
+              <img
+                src="designprocess_old.png"
+                alt="Previous process flow: fragmented feedback channels and late changes"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Legacy workflow: fragmented feedback and last-minute changes.</figcaption>
+            </figure>
+          </section>
+
+          <!-- Issues as team scaled -->
+          <section
+            class="section section--three media-display bestbuy-process-issues"
+            aria-labelledby="bestbuy-process-issues"
+          >
+            <h3 id="bestbuy-process-issues">
+              As the team scaled, the issues compounded:
+            </h3>
+
+            <div class="gt-col">
+              <img
+                src="problem_lastminedits.png"
+                alt="Clock icon representing overtime"
+                loading="lazy"
+                decoding="async"
+              />
+              <h4>🕰️ Overtime hours</h4>
+              <p>Designers working late to accommodate sudden revisions</p>
+            </div>
+
+            <div class="gt-col">
+              <img
+                src="problem_stress.png"
+                alt="Stressed face icon"
+                loading="lazy"
+                decoding="async"
+              />
+              <h4>😖 Burnout &amp; stress</h4>
+              <p>Unpredictable workloads and communication breakdowns</p>
+            </div>
+
+            <div class="gt-col">
+              <img
+                src="problem_invoice.png"
+                alt="Invoice icon indicating higher costs"
+                loading="lazy"
+                decoding="async"
+              />
+              <h4>💸 Increased costs</h4>
+              <p>Frequent revision rounds submitted to the outsourcing agency</p>
+            </div>
+          </section>
+
+          <!-- Insight -->
+          <section
+            class="section section--border-dash insight"
+            aria-labelledby="insight"
+            style="--gt-bg: var(--primary100);"
+          >
+            <div class="section__inner">
+              <h2 id="insight">💡 Insight: Design Needs Structure to Scale</h2>
+              <p>
+                Observing the chaos, I realized that without centralized communication and enforced
+                deadlines, the design process would remain reactive and expensive. The root issue
+                wasn’t creativity—it was the lack of structure around it.
+              </p>
+              <p>
+                With multiple departments involved—project managers, merchandisers, copywriters,
+                developers, and designers—we needed a shared framework that enforced consistency,
+                accountability, and clarity.
+              </p>
+            </div>
+          </section>
+
+          <!-- Solution -->
+          <section
+            class="section section--bg solution"
+            aria-labelledby="solution"
+            style="--gt-bg: var(--bestbuy); --gt-color: var(--white100);"
+          >
+            <div class="section__inner">
+              <h2 id="solution">Solution: A 2-Week Sprint &amp; Online Proofing</h2>
+              <p>
+                I introduced a structured two-week process with two fixed edit windows, supported by
+                an online proofing tool to house all feedback in one place.
+              </p>
+
+              <h3>Week 1: Review &amp; Mockup</h3>
+              <ul>
+                <li>Merchandisers submit content (product info, pricing, copy)</li>
+                <li>Designers create mockups</li>
+                <li>Stakeholders give feedback in one scheduled, in-person meeting</li>
+              </ul>
+
+              <h3>Week 2: Finalization</h3>
+              <ul>
+                <li>Only typo-level edits permitted</li>
+                <li>Mockups sent for localization</li>
+                <li>Final assets handed off to developers</li>
+              </ul>
+
+              <p>
+                Any feedback outside the proofing tool was no longer accepted—this maintained
+                control and ensured accountability.
+              </p>
+            </div>
+          </section>
+
+          <!-- New process (proposed) -->
+          <section class="section media-display" aria-labelledby="new-process">
+            <figure>
+              <img
+                src="designprocess_new.png"
+                alt="New structured process flow with centralized feedback and fixed edit windows"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                Structured workflow with centralized feedback and clear edit windows.
+              </figcaption>
+            </figure>
+          </section>
+
+          <!-- Implementation hurdles -->
+          <section class="section challenge" aria-labelledby="hurdles">
+            <h2 id="hurdles">Overcoming Implementation Hurdles</h2>
+
+            <h3>Aligning Cross-Functional Teams</h3>
+            <p>
+              With so many hands involved, standardizing communication took deliberate effort. We
+              worked across departments to ensure buy-in.
+            </p>
+
+            <h3>Navigating Change Resistance</h3>
+            <p>Stakeholders were used to the old way of working. To smooth the transition:</p>
+            <ul>
+              <li>We tracked the source and timing of edits</li>
+              <li>Held retrospectives every two e-newsletters</li>
+              <li>Identified unnecessary revisions and removed them from future cycles</li>
+            </ul>
+          </section>
+
+          <!-- Impact -->
+          <section
+            class="section section--bg outcome"
+            aria-labelledby="impact"
+            style="--gt-bg: var(--bestbuy); --gt-color: var(--white100);"
+          >
+            <div class="section__inner">
+              <h2 id="impact">🌟 Outcome: A Smarter, Calmer Design Workflow</h2>
+              <ul>
+                <li>✅ Production costs significantly reduced</li>
+                <li>⏱️ Faster design-to-dev turnaround time</li>
+                <li>📉 Last-minute changes dropped dramatically</li>
+                <li>🗂️ All feedback captured in one place—no more missed edits</li>
+                <li>😊 A healthier, more sustainable working environment for the team</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Process image -->
+          <section class="section" aria-labelledby="why-matters">
+            <figure>
+              <img
+                src="bestbuy-process-why-matter.jpg"
+                alt="Process illustration"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Image generated by Gemini</figcaption>
+            </figure>
+          </section>
+
+          <!-- Lessons -->
+          <section class="section why-matters" aria-labelledby="lessons">
+            <h2 id="lessons">Lesson Learned</h2>
+            <p>
+              Good design isn’t only visual—it’s about structuring collaboration. By designing the
+              process itself, we created clarity, predictability, and space for creativity.
+            </p>
+            <p>
+              This case study reflects how UX thinking can extend beyond screens—into process
+              design, collaboration, and team culture. It showcases leadership, operational
+              problem-solving, and an ability to scale creative work through structure.
+            </p>
+          </section>
         </div>
-    </div>
+      </div>
+    </main>
 
-   <nav class="project-nav"></nav>
+    <!-- Project nav injected via JS -->
+    <nav class="project-nav" aria-label="Project navigation"></nav>
 
+    <!-- Templates -->
     <template id="hero-template">
-    <div class="product-hero">
-        <img src="" alt="">
-    </div>
+      <div class="product-hero">
+        <img src="" alt="" />
+      </div>
     </template>
-    
-    <script src="../site.js"></script>
+
+    <!-- Core scripts -->
+    <script src="../site.js" defer></script>
+    <script
+      src="../projects.js"
+      defer
+      data-json="../projects.json"
+      data-base-path="../"
+    ></script>
     <script>
-    Site.Head.init({ basePath: "../" });
-    Site.Nav.init({ basePath: "../" });
-    Site.Footer.init();
-    Site.ProjectNav.init({
-        container: ".project-nav",
-        jsonPath: "../projects.json",
-        basePath: "../",
-        scope: "all",  // or "section" if you only want within the same section
-        loop: true
-    });
+      // Initialize after DOM is parsed
+      document.addEventListener('DOMContentLoaded', () => {
+        Site.Head.init({ basePath: "../" });
+        Site.Nav.init({ basePath: "../" });
+        Site.Footer.init();
+        Site.ProjectNav.init({
+          container: ".project-nav",
+          jsonPath: "../projects.json",
+          basePath: "../",
+          scope: "all", // or "section" to limit to same section
+          loop: true,
+        });
+      });
     </script>
 
-    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
-    
-</body>
-
+    <noscript>
+      <style>
+        html.preload body { visibility: visible; opacity: 1; }
+      </style>
+    </noscript>
+  </body>
 </html>

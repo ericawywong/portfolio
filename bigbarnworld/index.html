@@ -1,167 +1,178 @@
 <!doctype html>
-<html class="preload" lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" class="preload">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Big Barn World — Character Collectibles</title>
 
-  <!-- critical anti-FOUC: must be inline so it applies before external CSS -->
-  <style>html.preload body{visibility:hidden; opacity:0}</style>
+    <!-- Critical: prevent FOUC; keep inline -->
+    <style>html.preload body { visibility: hidden; opacity: 0; }</style>
 
-  <!-- fonts first (optional but nice) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
 
-  <!-- your CSS loaded by HTML (not JS) -->
-  <link rel="stylesheet" href="/default.css">
-  <link rel="stylesheet" href="/styles.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/default.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
-<body id="bigbarnworld">
+  <body id="bigbarnworld" style="--gt-color: var(--bigbarnworld);">
+    <!-- Landmark header (nav injected via JS) -->
+    <header id="site-header" role="banner"></header>
 
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="grid div-max-width">
+    <main id="main" class="container">
+      <div class="content-wrapper">
+        <div class="grid max-width">
+          <!-- Intro -->
+          <section class="section introduction" aria-labelledby="title">
+            <h1 id="title">Character Collectibles for Big Barn World</h1>
+            <p>
+              Big Barn World is a long-running social farming game with millions of players worldwide. It lets users build
+              their own farms, raise animals, and interact with friends. Seasonal updates and collectible characters are a
+              major driver of engagement, giving players fresh reasons to log in and expand their farms.
+            </p>
+            <p>
+              As the illustrator, I created a range of themed animal collectibles — each designed with adult and baby
+              versions for growth mechanics — while ensuring they remained recognizable even at very small sizes (as low as
+              75×75 pixels).
+            </p>
+            <p>
+              <a href="https://airgames.airg.com/bbw.html" class="text" target="_blank" rel="noopener">Visit Big Barn World →</a>
+            </p>
+          </section>
 
-                <div class="introduction">
-                    <h1>Character Collectibles for Big Barn World</h1>
-                    <p>Big Barn World is a long-running social farming game with millions of players worldwide. It lets users build their own farms, raise animals, and interact with friends. Seasonal updates and collectible characters are a major driver of engagement, giving players fresh reasons to log in and expand their farms.</p>
-                    <p>As the illustrator, I created a range of themed animal collectibles — each designed with adult and baby versions for growth mechanics — while ensuring they remained recognizable even at very small sizes (as low as 75×75 pixels).</p>
-                    <a href="https://airgames.airg.com/bbw.html" class="web" target="_blank">Visit Big Barn World →</a>
-                </div>
-
-                <div class="fact-sheet">
-                    <div class="multi-column-2">
-                    <div class="my-role">
-                        <h2>My Role</h2>
-                        <ul>
-                            <li>Concepting</li>
-                            <li>Illustrator</li>
-                            <li>UI Designer</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tools-used">
-                        <h2>Tools</h2>
-                        <ul class="icons-tools">
-                            <li class="adobe-ps">Photoshop</li>
-                            <li class="adobe-ai">Illustrator</li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-
-                <div class="challenge">
-                    <h2>🔍 Challenges</h2>
-                    <ul>
-                        <li>Create characters that are instantly  recognizable at small sizes on mobile devices.</li>
-                        <li>Balance humor and charm while staying consistent with the established art style.</li>
-                        <li>Design both adult and baby versions to support in-game progression.</li>
-                        <li>Ensure each series feels fresh but also connected to seasonal events.</li>
-                    </ul>
-                </div>
-
-                <div class="start-4-span-6 m-start-3-span-8 s-start-2-span-10 s-center">
-                    <img src="OwlBabyDemo.png" loading="lazy">
-                </div>
-
-                <div class="start-4-span-6 m-start-3-span-8 s-start-2-span-10 s-center">
-                    <img src="OwlDemo.png" loading="lazy">
-                </div>
-
-                <div class="insight" style="--colored-block-color: var(--project-bigbarnworld);">
-                    <div class="grid">
-                        <div>
-                            <h2>💡 Insight</h2>
-                            <p>Player behavior showed that expressive props and situational humor made animals more memorable than plain designs. By anchoring each collectible in a story or theme, players were more engaged and motivated to collect the full series.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="span-12">
-                    <h2 class="center">Seasonal Character Series</h2>
-                </div>
-
-                <div class="general-text">
-                    <h3>🏕️ Camping Series</h3>
-                    <p>Designed for a summer event, these animals brought humor and lightheartedness into the farm setting.</p>
-                    <ul class="multi-column-2">
-                            <li>
-                                <img src="CampingBearToilet.gif" loading="lazy">
-                            </li>
-                            <li>
-                                <img src="CampingBearBaby.png" loading="lazy">
-                            </li>
-                            <li>
-                                <img src="CampingFrog.png" loading="lazy">
-                            </li>
-                            <li>
-                                <img class="bbw-pot-beach" src="CampingFrogBaby.png" loading="lazy">
-                            </li>
-                            <li>
-                                <img class="bbw-pot-forest" src="CampingPanda.png" loading="lazy">
-                            </li>
-                            <li>
-                                <img src="CampingPandaBaby.png" loading="lazy">
-                            </li>
-                    </ul>
-                </div>
-
-                <div class="general-text">
-                    <h3>🎩 Magic Moose</h3>
-                    <p>A standalone character designed for a special event.</p>
-                    <ul class="multi-column-2">
-                        <li><img src="MagicMoose.gif" loading="lazy"></li>
-                    </ul>
-                </div>
-                
-                <div class="general-text">
-                    <h3>🧸 Plush Series</h3>
-                    <p>Developed as part of a holiday collectible drop, this series reimagined animals as plush toys.</p>
-                    <ul class="multi-column-2">
-                            <li><img src="PlushGiraffe.png" loading="lazy">
-                        </li>
-                            <li><img class="bbw-pot-safari" src="PlushGiraffeBaby.png" loading="lazy">
-                        </li>
-                            <li><img class="bbw-pot-forest" src="PlushKaola.png" loading="lazy">
-                        </li>
-                            <li><img src="PlushKaolaBaby.png" loading="lazy">
-                        </li>
-                            <li><img src="PlushOctopus.png" loading="lazy">
-                        </li>
-                            <li><img class="bbw-pot-underwater" src="PlushOctopusBaby.png" loading="lazy">
-                        </li>
-                    </ul>
-                </div>
-
+          <!-- Fact sheet -->
+          <section class="section section--two fact-sheet" aria-labelledby="facts">
+            <div class="gt-col">
+              <h3>Responsibilities</h3>
+              <ul>
+                  <li>Concepting</li>
+                  <li>Illustrator</li>
+                  <li>UI Designer</li>
+              </ul>
             </div>
+            <div class="gt-col">
+              <h3>Tools</h3>
+              <ul class="tools">
+                  <li><img class="adobe-ps"></img>Photoshop</li>
+                  <li><img class="adobe-ai"></img>Illustrator</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Challenges -->
+          <section class="section challenge" aria-labelledby="challenge">
+            <h2 id="challenge">🔍 Challenges</h2>
+            <ul>
+              <li>Create characters that are instantly  recognizable at small sizes on mobile devices.</li>
+              <li>Balance humor and charm while staying consistent with the established art style.</li>
+              <li>Design both adult and baby versions to support in-game progression.</li>
+              <li>Ensure each series feels fresh but also connected to seasonal events.</li>
+            </ul>
+          </section>
+
+          <!-- Gallery -->
+          <section class="section" aria-labelledby="gallery">
+            <!-- <h2 id="gallery" class="visually-hidden">Gallery</h2> -->
+              <div class="gt-col"><img src="OwlBabyDemo.png" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img src="OwlDemo.png" alt="" loading="lazy" /></div>
+          </section>
+
+          <!-- Insight -->
+          <section
+            class="section section--border-dash insight"
+            aria-labelledby="insight"
+            style="--gt-bg: var(--primary100); --gt-color: var(--bigbarnworld);"
+          >
+          <div class="section__inner">
+                <h2 id="insight">💡 Insight</h2>
+                <p>
+                  Player behavior showed that expressive props and situational humor made animals more memorable than
+                  plain designs. By anchoring each collectible in a story or theme, players were more engaged and motivated
+                  to collect the full series.
+                </p>
+            </div>
+          </section>
+
+          <!-- Seasonal Character Series -->
+          <section class="section section--two col--two" aria-labelledby="seasonal-series">
+            <div class="gt-col title">
+              <h2 id="seasonal-series" class="visually-hidden">Seasonal Character Series</h2>
+              <h3 id="camping-series" class="visually-hidden">🏕️ Camping Series</h3>
+              <p>Designed for a summer event, these animals brought humor and lightheartedness into the farm setting.</p>
+            </div>
+
+              <div class="gt-col"><img src="CampingBearToilet.gif" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img src="CampingBearBaby.png" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img src="CampingFrog.png" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img class="bbw-pot-beach" src="CampingFrogBaby.png" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img class="bbw-pot-forest" src="CampingPanda.png" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img src="CampingPandaBaby.png" alt="" loading="lazy" /></div>
+            </section>
+
+          <section class="section section--two col--two" aria-labelledby="seasonal-series">
+            <div class="gt-col title">
+            <h3 id="camping-series" class="visually-hidden">🎩 Magic Moose</h3>
+            <p>A standalone character designed for a special event.</p>
+            </div>
+            
+              <div class="gt-col"><img src="MagicMoose.gif" alt="" loading="lazy" /></div>
+            </section>
+
+          <section class="section section--two col--two" aria-labelledby="seasonal-series">
+            <div class="gt-col title">
+            <h3 id="camping-series" class="visually-hidden">🧸 Plush Series</h3>
+            <p>Developed as part of a holiday collectible drop, this series reimagined animals as plush toys.</p>
+            </div>
+            
+              <div class="gt-col"><img src="PlushGiraffe.png" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img class="bbw-pot-safari" src="PlushGiraffeBaby.png" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img class="bbw-pot-forest" src="PlushKaola.png" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img src="PlushKaolaBaby.png" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img src="PlushOctopus.png" alt="" loading="lazy" /></div>
+              <div class="gt-col"><img class="bbw-pot-underwater" src="PlushOctopusBaby.png" alt="" loading="lazy" /></div>
+            </ul>
+          </section>
         </div>
-    </div>
+      </div>
+    </main>
 
-    <nav class="project-nav"></nav>
+    <!-- Project nav injected via JS -->
+    <nav class="project-nav" aria-label="Project navigation"></nav>
 
+    <!-- Templates -->
     <template id="hero-template">
-    <div class="product-hero">
-        <img src="" alt="">
-    </div>
+      <div class="product-hero">
+        <img src="" alt="" />
+      </div>
     </template>
-    
-    <script src="../site.js"></script>
-    <script>
-    Site.Head.init({ basePath: "../" });
-    Site.Nav.init({ basePath: "../" });
-    Site.Footer.init();
-    Site.ProjectNav.init({
-        container: ".project-nav",
-        jsonPath: "../projects.json",
-        basePath: "../",
-        scope: "all",  // or "section" if you only want within the same section
-        loop: true
-    });
+
+    <!-- Core scripts -->
+    <script src="../site.js" defer></script>
+    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
+    <script defer>
+      // Initialize after DOM is parsed
+      document.addEventListener('DOMContentLoaded', () => {
+        Site.Head.init({ basePath: "../" });
+        Site.Nav.init({ basePath: "../" });
+        Site.Footer.init();
+        Site.ProjectNav.init({
+          container: ".project-nav",
+          jsonPath: "../projects.json",
+          basePath: "../",
+          scope: "all", // or "section" to limit to same section
+          loop: true,
+        });
+      });
     </script>
 
-    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
-
-</body>
-
+    <noscript>
+      <style>html.preload body { visibility: visible; opacity: 1; }</style>
+    </noscript>
+  </body>
 </html>
