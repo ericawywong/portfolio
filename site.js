@@ -61,6 +61,8 @@
     return { init };
   })();
 
+  //<li><a class="about-me" href="${basePath}about-me.html"></a></li>
+
   // -------- NAV --------
   const Nav = (() => {
     const init = once((opts = {}) => {
@@ -73,7 +75,7 @@
           </div>
           <div class="nav-container remove-padding-left">
             <ul>
-              <li><a class="about-me" href="${basePath}about-me.html"></a></li>
+  
               <li><a class="instagram" href="https://www.instagram.com/littleinkventure/" target="_blank" rel="noopener noreferrer"></a></li>
               <li><a class="email" href="mailto:ericawyw@gmail.com"></a></li>
             </ul>
