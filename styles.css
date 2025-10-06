@@ -49,6 +49,7 @@
   --pacfrens:        #54058d;
   --bigbarnworld:    #239456;
   --littleinkventure:#012f49;
+  --just10: #35AE9B;
 
   --primary100: #ffc800;
   --primary120: #c99e02;
@@ -472,6 +473,10 @@ footer .copyright {
 }
 .sticky__media img { inline-size: 100%; block-size: auto; object-fit: cover; }
 
+.sticky-section.challenge p, .sticky-section.challenge ul { color:var(--grey10);}
+.sticky-section.challenge .section__inner {padding:0;}
+.add-margin-block-end {margin-block-end: var(--gap-lg);}
+
 /* ===============================
    Breakpoints
    =============================== */
@@ -540,6 +545,11 @@ footer .copyright {
   /* Case B — text first, image second */
   .sticky-section > .sticky__aside:first-child { grid-column: 1 / span 6; }
   .sticky-section > .sticky__media:last-child  { grid-column: 7 / span 6; }
+
+
+.sticky-section.insight .section__inner {padding:var(--gap-xl);}
+.add-margin-block-end {margin-block-end: var(--gap-2xl);}
+
 }
 
 @media (min-width: 768px) {

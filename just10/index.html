@@ -1,47 +1,291 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!doctype html>
+<html lang="en" class="preload">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Just 10</title>
 
-  <!-- CONFIG: change these per project -->
-  <meta name="protected:slug" content="braintest">                 <!-- unique key -->
-  <meta name="protected:hash" content="45f005755167826a841bce781edbff907edb3d46df732e9d65f5a61ec85687cf">       <!-- password hash -->
-  <meta name="protected:redirect" content="./content.html">        <!-- where to go after unlock -->
-  <meta name="protected:storage" content="session">                <!-- session | local -->
+    <!-- Critical: prevent FOUC; keep inline -->
+    <style>html.preload body { visibility: hidden; opacity: 0; }</style>
 
-  <title>Enter Password</title>
-  <style>
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:#0f172a; color:#e5e7eb; }
-    .wrap { min-height:100svh; display:flex; align-items:center; justify-content:center; padding:2rem; }
-    .card { width:min(480px,100%); background:#111827; border-radius:16px; padding:2rem; box-shadow:0 10px 30px rgba(0,0,0,.35); }
-    h1 { margin:0 0 .5rem; font-size:1.6rem; }
-    p { opacity:.85; margin:0 0 1.25rem; line-height:1.6; }
-    label { display:block; font-weight:600; margin-bottom:.5rem; }
-    input[type="password"]{ width:-webkit-fill-available; padding:.9rem 1rem; border-radius:10px; border:1px solid #374151; background:#0b1220; color:#e5e7eb; }
-    .row { display:flex; gap:.75rem; margin-top:1rem; align-items:center; }
-    button { padding:.85rem 1.1rem; border:0; border-radius:10px; background:#6ee7b7; color:#0b1220; font-weight:700; cursor:pointer; }
-    .error { margin-top:.75rem; color:#fca5a5; min-height:1.25rem; }
-    .hint { font-size:.85rem; opacity:.7; }
-  </style>
-</head>
-<body>
-  <main class="wrap">
-    <section class="card" role="dialog" aria-labelledby="t" aria-describedby="d">
-      <h1 id="t">Protected Case Study</h1>
-      <p id="d">Enter password to continue.</p>
-      <form id="gate-form" novalidate>
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password" autocomplete="current-password" required />
-        <div class="row">
-          <button type="submit">Unlock</button>
-          <!-- <span class="hint">Hint: provided in your email/resume.</span> -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body id="Just10" style="--gt-color: var(--just10);">
+    <!-- Landmark header (nav injected via JS) -->
+    <header id="site-header" role="banner"></header>
+
+    <main id="main" class="container">
+      <div class="content-wrapper">
+        <div class="grid max-width">
+          <!-- Intro -->
+          <section class="section introduction" aria-labelledby="title">
+            <h1 id="title">Just10 — A Privacy-First Social Media Platform</h1>
+            <p>In today’s digital world, everything we post is tracked. From that embarrassing Facebook memory that resurfaces years later, to Instagram likes turning into targeted ads, to an angry rant you regret when you remember your coworkers follow you — nothing truly disappears online.
+            </p>
+            <h4>But what if it could?</h4>
+            <p>Just10 was designed as a privacy-first social platform where users could share posts, images, and thoughts with a select circle of up to 10 trusted friends. Every piece of content automatically disappeared after 10 days — gone from the public eye and even from the database. The goal was to create a safer, more authentic community, where people could speak freely without the fear of being judged years later.</p>
+            <p>I collaborated with another UI designer on the final designs, responsive experiences across platforms (iOS, BlackBerry, and web), illustrations, and related assets. I also contributed to flow charts, wireframes, and feature enhancements.</p>
+          </section>
+
+          <!-- Fact sheet -->
+          <section class="section section--two fact-sheet" aria-labelledby="facts">
+            <div class="gt-col">
+              <h4>Responsibilities</h4>
+              <ul>
+                  <li>Wireframe</li>
+                  <li>Flow Chart</li>
+                  <li>UI Design</li>
+                  <li>Responsive web</li>
+                  <li>Illustrations</li>
+              </ul>
+            </div>
+            <div class="gt-col">
+              <h4>Tools</h4>
+              <ul class="tools">
+                  <li><img class="adobe-ps"></img>Photoshop</li>
+                  <li><img class="adobe-ai"></img>Illustrator</li>
+              </ul>
+            </div>
+          </section>         
+          
+          <!-- Challenge -->
+          <section class="sticky-section challenge" aria-labelledby="challenge">
+            <div class="sticky__media">
+              <img
+                src="Challenge.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <aside class="sticky__aside section--bg">
+              <div class="section__inner">
+            <h2 id="challenge">Challenge: Redefining “Social” in a Private World</h2>
+            <p>
+              Most social platforms are designed for visibility, engagement, and data collection. Just10 flipped that model upside down — focusing on privacy, impermanence, and close-knit sharing.
+            </p>
+            <p>The challenge was balancing privacy and intimacy while still keeping the app fun, engaging, and visually appealing. Designing something “personal” without being sterile or isolating required a delicate balance of tone, usability, and emotional warmth.</p>
+            <!-- <ul>
+              <li>Posts can resurface years later, sometimes out of context.</li>
+              <li>Oversharing leads to privacy concerns.</li>
+              <li>Users feel pressure to perform instead of connect.</li>
+            </ul>
+            <p>How might we design a platform that gives people back control of their online presence, while still fostering authentic connection?</p> -->
+            </div>
+            </aside>
+          </section>
+
+          <!-- Insight -->
+                     <section class="sticky-section insight" aria-labelledby="insight">
+            <aside
+              class="sticky__aside section--border-dash"
+              style="--gt-bg: var(--primary100);"
+            >
+              <div class="section__inner">
+                <h2 id="insight">💡 Insight</h2>
+                <p>
+                  The busier we get, the harder it is to maintain close friendships. Research shows that most adults maintain just 1–5 close friends, and only a small percentage say they have 10 or more.</p> 
+                  <p>By capping the network at 10, Just10 aligns more closely with how human relationships naturally operate — a realistic upper bound that preserves intimacy without overextending cognitive or emotional bandwidth.
+                </p>
+                <!-- <p>Just10 was built around two principles:</p>
+                <ul>
+                  <li><strong>Ephemerality</strong> — all content disappears in 10 days.</li>
+                  <li><strong>Intentionality</strong> — users can only connect with 10 friends, reinforcing quality over quantity.</li>
+                </ul> -->
+              </div>
+            </aside>
+            <div class="sticky__media">
+              <img
+                src="insight.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </section>
+
+          <!-- Solution -->
+          <section class="section Solution" aria-labelledby="Solution">
+            <h2 id="Solution">Solution</h2>
+            <p>We designed a social platform that redefined how users shared online:</p>
+            <ul>
+              <li><strong>10-day lifespan</strong> — all posts, comments, and images auto-deleted from both public view and backend storage.</li>
+              <li><strong>Limit of 10 connections</strong> — focused on close friends instead of large, performative networks.</li>
+              <li><strong>Privacy-first interface</strong> — clear indicators of post lifespan and deletion, ensuring trust.</li>
+              <li><strong>Cross-platform availability</strong> — responsive design for mobile and web.</li>
+              <li><strong>Illustrations & visuals</strong> — playful elements that kept the app welcoming while tackling serious topics like privacy.</li>
+            </ul>
+          </section>
+
+          <section class="section media-display">
+            <img src="homepage-web.jpg">
+          </section>
+
+          <section
+            class="section section--four media-display ui-display"
+            aria-labelledby="">
+
+            <div class="gt-col">
+              <img
+                src="signup-android.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="gt-col">
+              <img
+                src="homepage-android.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="gt-col">
+              <img
+                src="recentpost-userpage-android.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="gt-col">
+              <img
+                src="friends-userpage-android.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </section>
+
+          <!-- Feature -->
+          <section
+            class="section section--border-solid outcome"
+          >
+            <div class="section__inner">
+              <h2 id="Feature">“Meaction” — Express Yourself Authentically</h2>
+              <p>Unlike typical emoji reactions, Just10 introduced a feature called <strong>“Meaction”</strong> — where users could react using their own photos.</p>
+              <p>It was playful, expressive, and deeply personal — allowing users to replace generic emojis with real emotion. You could respond to a post with your laughter, a raised eyebrow, or your pet’s confused face.</p>
+              <p>Apple later released their “Memoji”/“Gemoji” feature, echoing the same spirit of personalized, photo-based reactions.</p>
+            </div>
+          </section>
+
+          <section
+            class="section section--four media-display ui-display"
+            aria-labelledby="">
+
+            <div class="gt-col">
+              <img
+                src="whatismection2-android.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="gt-col">
+              <img
+                src="whatismection1-android.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="gt-col">
+              <img
+                src="meaction-userpage-android.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="gt-col">
+              <img
+                src="meaction-android.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </section>
+
+          <!-- Impact -->
+          <section
+            class="section section--bg outcome"
+            aria-labelledby="insight"
+            style="--gt-bg: var(--just10); --gt-color: var(--white100);"
+          >
+            <div class="section__inner">
+                <h2 id="result">🌟 Result</h2>
+                <ul>
+                  <li>
+                    ✅ Shaped an early prototype that brought the idea of ephemeral, privacy-first sharing to life.
+                  </li>
+                  <li>🎨 Delivered responsive designs for multiple platforms plus supporting illustrations.</li>
+                  <li>👥 Introduced a new way of thinking about online communities: small, safe, and temporary.</li>
+                  <li>⚡ Though the project never fully launched, it inspired new conversations about privacy-first social media design.</li>
+                </ul>
+            </div>
+          </section>
+
+          <!-- Lessons -->
+          <section class="section" aria-labelledby="lessons-learned">
+            <h2 id="lessons-learned">Lessons Learned</h2>
+            <p>This project taught me that designing for trust is just as important as designing for usability.</p>
+            <p>While many social platforms focus on growth and data, Just10 flipped the script by asking: <strong>How do we make people feel safe enough to be real?</strong></p>
+            <p>Even though the project didn’t take off commercially, I loved every bit of creating it. It showed me the power of designing around human psychology, privacy, and intentional connection — lessons that still influence how I approach digital products today.</p>
+          </section>
         </div>
-        <div id="error" class="error" aria-live="polite"></div>
-      </form>
-    </section>
-  </main>
+      </div>
+    </main>
 
-  <script src="../protect.js"></script>
-</body>
+    <!-- Project nav injected via JS -->
+    <nav class="project-nav" aria-label="Project navigation"></nav>
+
+    <!-- Templates -->
+    <template id="hero-template">
+      <div class="product-hero">
+        <img src="" alt="" />
+      </div>
+    </template>
+
+    <!-- Core scripts -->
+    <script src="../site.js" defer></script>
+    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
+    <script defer>
+      // Initialize after DOM is parsed
+      document.addEventListener('DOMContentLoaded', () => {
+        Site.Head.init({ basePath: "../" });
+        Site.Nav.init({ basePath: "../" });
+        Site.Footer.init();
+        Site.ProjectNav.init({
+          container: ".project-nav",
+          jsonPath: "../projects.json",
+          basePath: "../",
+          scope: "all", // or "section" to limit to same section
+          loop: true,
+        });
+      });
+    </script>
+
+    <noscript>
+      <style>html.preload body { visibility: visible; opacity: 1; }</style>
+    </noscript>
+  </body>
 </html>
