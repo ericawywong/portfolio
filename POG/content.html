@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" class="preload">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Just 10</title>
+
+    <!-- Critical: prevent FOUC; keep inline -->
+    <style>html.preload body { visibility: hidden; opacity: 0; }</style>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body id="pog" style="--gt-color: var(--pog);">
+    <!-- Landmark header (nav injected via JS) -->
+    <header id="site-header" role="banner"></header>
+
+    <main id="main" class="container">
+      <div class="content-wrapper">
+        <div class="grid max-width">
+          <!-- Intro -->
+          <section class="section introduction" aria-labelledby="title">
+            <h1 id="title">POG: Building Structure and Identity for Internal SaaS Tools</h1>
+            <p>POG (short for “Pot of Gold”) is part of an internal suite of SaaS tools developed for airG’s Sales and Marketing teams. The name started as an inside joke — a lighthearted placeholder that stuck — but the product itself served a serious purpose: to bring clarity, efficiency, and consistency to internal operations.
+            </p>
+            <p>POG was originally built from a legacy tool that had become overly complicated, visually inconsistent, and difficult to navigate. I partnered with a Product Manager to reimagine its structure, interface, and identity — designing both the branding and an entirely new design system to simplify workflows and unify the experience across the suite.</p>
+          </section>
+
+          <!-- Fact sheet -->
+          <section class="section section--two fact-sheet" aria-labelledby="facts">
+            <div class="gt-col">
+              <h4>Responsibilities</h4>
+              <ul>
+                  <li>UI/UX Design</li>
+                  <li>Design System Creation</li>
+                  <li>Branding & Visual Identity</li>
+                  <li>Prototyping</li>
+                  <li>Cross-functional Collaboration</li>
+              </ul>
+            </div>
+            <div class="gt-col">
+              <h4>Tools</h4>
+              <ul class="tools">
+                  <li><img class="adobe-ps">Sketch</li>
+                  <li><img class="adobe-ai">Illustrator</li>
+                  <li>Tailwind CSS (in collaboration with dev)</li>
+                  <li>Angular Component Library</li>
+              </ul>
+            </div>
+          </section>         
+          
+          <!-- Challenge -->
+          <section class="section challenge" aria-labelledby="challenge">
+            <h2 id="challenge">Challenge: Clarity Within Chaos</h2>
+            <p>
+              When we evaluated existing design systems, we found that they were:
+            </p>
+            <ul>
+              <li><strong>Overly complicated</strong> — too many variations and edge cases we didn’t need.</li>
+              <li><strong>Poorly structured</strong> — difficult to find and organize relevant components.</li>
+              <li><strong>Mismatched</strong> — many styles and components simply didn’t fit our products.</li>
+            </ul>
+            <p>The result? Slower design, more inconsistencies, and unnecessary rework during dev handoff.</p>
+          </section>
+
+          <!-- Insight -->
+            <section class="section insight" aria-labelledby="insight">
+
+                <h2 id="insight">💡 Insight: Less Is More (When It’s Tailored)</h2>
+                <p>
+                  Instead of trying to adapt to an off-the-shelf system, we asked: “What if we just designed for ourselves?”</p> 
+                  <p>We realized that:</p>
+                  <ul>
+                    <li>A simplified, custom system would speed up design and reduce clutter.</li>
+                    <li>Categorizing components more clearly would make it easier for designers and developers to find what they need.</li>
+                    <li>Spacing, variables, and tokens could provide consistency at scale while reducing revisions during QA.</li>
+                    <li>A lighter system meant less overhead, keeping our focus on delivering value for the Sales and Marketing teams.</li>
+                  </ul>
+          </section>
+
+          <!-- Process -->
+            <section class="section Process" aria-labelledby="Process">
+
+                <h2 id="insight">💡 Insight: Less Is More (When It’s Tailored)</h2>
+                <h4>Research & Audit</h4>
+                <ul>
+                    <li>Reviewed existing design systems and noted what didn’t fit our use cases.</li>
+                    <li>Gathered feedback from designers, developers, and internal stakeholders.</li>
+                </ul>
+                <h4>Simplification & Categorization</h4>
+                <ul>
+                    <li>Removed unnecessary styles and components.</li>
+                    <li>Organized components into logical, easy-to-browse categories.</li>
+                </ul>
+                <h4>System Building</h4>
+                <ul>
+                    <li>Established consistent spacing rules and component specs.</li>
+                    <li>Created a library of commonly used components (buttons, modals, inputs) and standardized font styles & color variables.</li>
+                </ul>
+                <h4>Collaboration</h4>
+                <ul>
+                    <li>Worked closely with developers during implementation, ensuring specs were clear and minimizing handoff friction.</li>
+                </ul>
+                <h4>Iteration & Feedback</h4>
+                <ul>
+                    <li>Collected input from real users (Sales/Marketing teams).</li>
+                    <li>Use and adjust frameworks and common component libraries based on usability and dev efficiency.</li>
+                    <li>Committed to continuous evolution of the system.</li>
+                </ul>
+          </section>
+
+          <!-- Solution -->
+          <section class="section" aria-labelledby="Solution">
+            <h2 id="Solution">Solution: POG Design System</h2>
+            <p>POG delivered a simplified, on-brand design system that made life easier for everyone:</p>
+            <ul>
+              <li><strong>Tailored to our products</strong> — no bloat, just what we needed.</li>
+              <li><strong>Consistent spacing and specs</strong> — reduced QA edits and made handoffs smoother.</li>
+              <li><strong>Faster prototyping & iteration</strong> — cdesigners could replicate designs quickly.</li>
+              <li><strong>Happier developers</strong> — clear component specs meant fewer errors and less back-and-forth.</li>
+              <li><strong>Scalable & evolving</strong> — system designed to grow as products evolve.</li>
+            </ul>
+          </section>
+
+          <!-- Feature -->
+          <section class="section outcome">
+              <h2 id="Validation">Validation</h2>
+              <p>Reduced the number of QA edits and design errors significantly.</p>
+              <p>Improved developer satisfaction with clearer specs and reusable components.</p>
+              <p>Faster design-to-dev cycle, saving hours of rework per project.</p>
+              <p>Positive feedback from Sales and Marketing teams: tools were easier and more intuitive to use.</p>
+          </section>
+
+          <!-- Impact -->
+          <section
+            class="section outcome"
+            aria-labelledby="insight">
+
+                <h2 id="result">🌟 Result</h2>
+                <ul>
+                  <li>
+                    ⏱️ Reduced production and QA time.
+                  </li>
+                  <li>🎨 Ensured brand consistency across internal tools.</li>
+                  <li>📂 Provided a foundation for scaling future SaaS tools.</li>
+                  <li>😊 Created a better working relationship between design, devs, and stakeholders.</li>
+                </ul>
+          </section>
+
+          <!-- Lessons -->
+          <section class="section" aria-labelledby="lessons-learned">
+            <h2 id="lessons-learned">Lessons Learned</h2>
+            <p>This project reinforced that good design systems aren’t about size — they’re about fit.</p>
+            <p>By stripping away unnecessary complexity and tailoring the system to our actual needs, we made design faster, collaboration smoother, and tools more effective.</p>
+            <p>Most importantly, I learned that a design system is never “finished.” POG is a living, evolving framework — shaped by real-world use, feedback, and continuous iteration.</p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Project nav injected via JS -->
+    <nav class="project-nav" aria-label="Project navigation"></nav>
+
+    <!-- Templates -->
+    <template id="hero-template">
+      <div class="product-hero">
+        <img src="" alt="" />
+      </div>
+    </template>
+
+    <!-- Core scripts -->
+    <script src="../site.js" defer></script>
+    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
+    <script defer>
+      // Initialize after DOM is parsed
+      document.addEventListener('DOMContentLoaded', () => {
+        Site.Head.init({ basePath: "../" });
+        Site.Nav.init({ basePath: "../" });
+        Site.Footer.init();
+        Site.ProjectNav.init({
+          container: ".project-nav",
+          jsonPath: "../projects.json",
+          basePath: "../",
+          scope: "all", // or "section" to limit to same section
+          loop: true,
+        });
+      });
+    </script>
+
+    <noscript>
+      <style>html.preload body { visibility: visible; opacity: 1; }</style>
+    </noscript>
+  </body>
+</html>
