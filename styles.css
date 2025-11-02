@@ -51,6 +51,7 @@
   --littleinkventure:#012f49;
   --just10: #35AE9B;
   --pog: #2A9FA3;
+  --moviebitez: #102F69;
 
   --primary100: #ffc800;
   --primary120: #c99e02;
@@ -449,6 +450,25 @@ footer .copyright {
 
 .center {
   text-align: center;
+}
+
+.small {
+  font-size: 0.76rem;
+  margin: 1rem;
+}
+
+quote {
+  display: block;
+  font-style: italic;
+  font-weight: 600;
+  border-left: solid 0.25rem var(--primary100);
+  padding-left: var(--gap-md);
+  margin-block: var(--gap-md);
+  color: var(--grey20);
+}
+
+strong {
+  font-weight: 600;
 }
 
 .bestbuy-process-issues { text-align: center; }
