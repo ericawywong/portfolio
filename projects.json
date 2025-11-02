@@ -15,6 +15,30 @@
         }
       },
       {
+        "href": "braintest/index.html",
+        "img": "braintest/product_thumbnail.jpg",
+        "alt": "BrainTest - Mobile App, Web App, Web design for early Alzheimer's detection",
+        "title": "BrainTest",
+        "desc": "Mobile App, Web App, Web design for early Alzheimer's detection",
+        "slug": "braintest",
+        "hero": {
+          "src": "braintest/product_hero.jpg",
+          "alt": "BrainTest - Mobile App, Web App, Web design for early Alzheimer's detection"
+        }
+      },
+      {
+        "href": "POG/index.html",
+        "img": "POG/product_thumbnail.jpg",
+        "alt": "",
+        "title": "POG",
+        "desc": "Internal SaaS management tool",
+        "slug": "pog",
+        "hero": {
+          "src": "POG/product_hero.jpg",
+          "alt": "POG - Internal SaaS management tool"
+        }
+      },
+      {
         "href": "just10/index.html",
         "img": "just10/product_thumbnail.jpg",
         "alt": "Just10 – A Social Network for Closer, Safer Connections",
@@ -48,30 +72,6 @@
         "hero": {
           "src": "bestbuy/product_hero_enewsletter.jpg",
           "alt": "Best Buy Responsive Redesign of Best Buy E-Newsletters"
-        }
-      },
-      {
-        "href": "braintest/index.html",
-        "img": "braintest/product_thumbnail.jpg",
-        "alt": "BrainTest - Mobile App, Web App, Web design for early Alzheimer's detection",
-        "title": "BrainTest",
-        "desc": "Mobile App, Web App, Web design for early Alzheimer's detection",
-        "slug": "braintest",
-        "hero": {
-          "src": "braintest/product_hero.jpg",
-          "alt": "BrainTest - Mobile App, Web App, Web design for early Alzheimer's detection"
-        }
-      },
-      {
-        "href": "POG/index.html",
-        "img": "POG/product_thumbnail.jpg",
-        "alt": "",
-        "title": "POG",
-        "desc": "Internal SaaS management tool",
-        "slug": "pog",
-        "hero": {
-          "src": "POG/product_hero.jpg",
-          "alt": "POG - Internal SaaS management tool"
         }
       }
     ]
