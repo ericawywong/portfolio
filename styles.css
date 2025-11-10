@@ -440,8 +440,8 @@ footer .copyright {
 }
 
 .tools img {
-  inline-size: 2rem;
-  block-size: 2rem;
+  inline-size: 1.24rem;
+  block-size: 1.24rem;
   display: inline;
   vertical-align: middle;
   margin-inline-end: var(--gap-xs);
