@@ -1,135 +1,47 @@
-<!doctype html>
-<html lang="en" class="preload">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <title>Little Inkventure — Creative Social Media</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Critical: prevent FOUC; keep inline -->
-    <style>html.preload body { visibility: hidden; opacity: 0; }</style>
+  <!-- CONFIG: change these per project -->
+  <meta name="protected:slug" content="braintest">                 <!-- unique key -->
+  <meta name="protected:hash" content="45f005755167826a841bce781edbff907edb3d46df732e9d65f5a61ec85687cf">       <!-- password hash -->
+  <meta name="protected:redirect" content="./content.html">        <!-- where to go after unlock -->
+  <meta name="protected:storage" content="session">                <!-- session | local -->
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    />
-
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body id="braintest" style="--gt-color: var(--braintest);">
-    <!-- Landmark header (nav injected via JS) -->
-    <header id="site-header" role="banner"></header>
-
-    <main id="main" class="container">
-      <div class="content-wrapper">
-        <div class="grid max-width">
-          <!-- Intro -->
-          <section class="section introduction" aria-labelledby="title">
-            <h1 id="title">BrainTest: Designing a Digital Alzheimer’s Screening Platform</h1>
-            <p>BrainTest is an empirically validated app designed for the early screening of Alzheimer’s — a chronic, irreversible condition that affects memory, thinking, and behavior. Traditionally associated with people over 65, research shows symptoms can appear much earlier.</p>
-            <p>The goal of BrainTest was simple but ambitious: make early screening more <strong>accessible, approachable, and scalable</strong>. The app gave doctors a tool to identify subtle signs of Alzheimer’s and offered families reassurance by providing a convenient at-home screening option.</p>
-            <p>As part of the design team, I worked across <strong>iOS, Android, and web platforms, building a cohesive design system</strong> while also shaping patient- and doctor-facing portals. I introduced micro-animations, guided tutorials, and an interactive educational guide — all while keeping elderly users (and their families) at the center of the experience.</p>
-          </section>
-
-          <!-- Fact sheet -->
-          <section class="section section--two fact-sheet" aria-labelledby="facts">
-            <div class="gt-col">
-              <h4>Responsibilities</h4>
-              <ul>
-                <li>UI Design</li>
-                <li>UX Design & Prototyping</li>
-                <li>Responsive Web, iOS, Android Design</li>
-                <li>Design System Creation</li>
-                <li>Animation</li>
-                <li>Video Editing</li>
-                <li>QA Review & Handoff</li>
-              </ul>
-            </div>
-            <div class="gt-col">
-              <h4>Tools</h4>
-              <ul class="tools">
-                  <li><img class="sketch"></img>Sketch</li>
-                  <li><img class="figma"></img>Figma</li>
-                  <li><img class="zeplin"></img>Zeplin</li>
-                  <li><img class="adobe-ps"></img>Photoshop</li>
-                  <li><img class="adobe-ai"></img>Illustrator</li>
-                  <li><img class="adobe-ae"></img>After Effects</li>
-                  <li><img class="lottie"></img>Lottie</li>
-                  <li><img class="principle"></img>Principle</li>
-              </ul>
-            </div>
-          </section>
-
-          <!-- Challenge -->
-          <section class="section challenge" aria-labelledby="challenge">
-            <h2 id="challenge">Challenge</h2>
-          </section>
-
-          <!-- Insight -->
-          <section
-            class="section section--border-dash insight"
-            aria-labelledby="insight"
-            style="--gt-bg: var(--primary100);"
-          >
-            <div class="section__inner">
-                <h2 id="insight">💡 Insight</h2>
-            </div>
-          </section>
-
-          <!-- Impact -->
-          <section
-            class="section section--bg outcome"
-            aria-labelledby="insight"
-            style="--gt-bg: var(--littleinkventure); --gt-color: var(--white100);"
-          >
-            <div class="section__inner">
-                <h2 id="result">🌟 Result</h2>
-            </div>
-          </section>
-
-          <!-- Lessons -->
-          <section class="section" aria-labelledby="lessons-learned">
-            <h2 id="lessons-learned">Lessons Learned</h2>
-          </section>
+  <title>Enter Password</title>
+  <style>
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:#0f172a; color:#e5e7eb; }
+    .wrap { min-height:100svh; display:flex; align-items:center; justify-content:center; padding:2rem; }
+    .card { width:min(480px,100%); background:#111827; border-radius:16px; padding:2rem; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+    h1 { margin:0 0 .5rem; font-size:1.6rem; }
+    p { opacity:.85; margin:0 0 1.25rem; line-height:1.6; }
+    label { display:block; font-weight:600; margin-bottom:.5rem; }
+    input[type="password"]{ width:-webkit-fill-available; padding:.9rem 1rem; border-radius:10px; border:1px solid #374151; background:#0b1220; color:#e5e7eb; }
+    .row { display:flex; gap:.75rem; margin-top:1rem; align-items:center; }
+    button { padding:.85rem 1.1rem; border:0; border-radius:10px; background:#6ee7b7; color:#0b1220; font-weight:700; cursor:pointer; }
+    .error { margin-top:.75rem; color:#fca5a5; min-height:1.25rem; }
+    .hint { font-size:.85rem; opacity:.7; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" role="dialog" aria-labelledby="t" aria-describedby="d">
+      <h1 id="t">Protected Case Study</h1>
+      <p id="d">Enter password to continue.</p>
+      <form id="gate-form" novalidate>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required />
+        <div class="row">
+          <button type="submit">Unlock</button>
+          <!-- <span class="hint">Hint: provided in your email/resume.</span> -->
         </div>
-      </div>
-    </main>
+        <div id="error" class="error" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
 
-    <!-- Project nav injected via JS -->
-    <nav class="project-nav" aria-label="Project navigation"></nav>
-
-    <!-- Templates -->
-    <template id="hero-template">
-      <div class="product-hero">
-        <img src="" alt="" />
-      </div>
-    </template>
-
-    <!-- Core scripts -->
-    <script src="../site.js" defer></script>
-    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
-    <script defer>
-      // Initialize after DOM is parsed
-      document.addEventListener('DOMContentLoaded', () => {
-        Site.Head.init({ basePath: "../" });
-        Site.Nav.init({ basePath: "../" });
-        Site.Footer.init();
-        Site.ProjectNav.init({
-          container: ".project-nav",
-          jsonPath: "../projects.json",
-          basePath: "../",
-          scope: "all", // or "section" to limit to same section
-          loop: true,
-        });
-      });
-    </script>
-
-    <noscript>
-      <style>html.preload body { visibility: visible; opacity: 1; }</style>
-    </noscript>
-  </body>
+  <script src="../protect.js"></script>
+</body>
 </html>
