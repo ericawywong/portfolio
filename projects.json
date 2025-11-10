@@ -116,34 +116,5 @@
         }
       }
     ]
-  },
-  {
-    "title": "Non-Digital works",
-    "cards": [
-      {
-        "href": "TitanicSkytrain/index.html",
-        "img": "TitanicSkytrain/product_thumbnail.jpg",
-        "alt": "Titanic wrapper for Skytrain",
-        "title": "Skytrain Wrapper",
-        "desc": "Titanic wrapper for Skytrain",
-        "slug": "TitanicSkytrain",
-        "hero": {
-          "src": "TitanicSkytrain/product_hero.jpg",
-          "alt": "Titanic wrapper for Skytrain"
-        }
-      },
-      {
-        "href": "Heli-One/index.html",
-        "img": "Heli-One/product_thumbnail.jpg",
-        "alt": "Heli-One Template Redesign",
-        "title": "Heli-One",
-        "desc": "Helicopter services company's print template redesign",
-        "slug": "Heli-One",
-        "hero": {
-          "src": "Heli-One/product_hero.jpg",
-          "alt": "Heli-One Template Redesign"
-        }
-      }
-    ]
   }
 ]
