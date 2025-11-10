@@ -116,5 +116,22 @@
         }
       }
     ]
+  },
+  {
+    "title": "Non-Digital works",
+    "cards": [
+      {
+        "href": "Heli-One/index.html",
+        "img": "Heli-One/product_thumbnail.jpg",
+        "alt": "Heli-One Template Redesign",
+        "title": "Heli-One",
+        "desc": "Helicopter services company's print template redesign",
+        "slug": "helione",
+        "hero": {
+          "src": "Heli-One/product_hero.jpg",
+          "alt": "Heli-One Template Redesign"
+        }
+      }
+    ]
   }
 ]

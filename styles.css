@@ -52,6 +52,7 @@
   --just10: #35AE9B;
   --pog: #2A9FA3;
   --moviebitez: #102F69;
+  --helione: #DF6921;
 
   --primary100: #ffc800;
   --primary120: #c99e02;
@@ -82,6 +83,7 @@
 .adobe-ps{ background-image: url("icons/adobe-ps.svg"); }
 .adobe-ae{ background-image: url("icons/adobe-ae.svg"); }
 .adobe-ai{ background-image: url("icons/adobe-ai.svg"); }
+.adobe-id{ background-image: url("icons/adobe-id.svg"); }
 .figma{ background-image: url("icons/figma.svg"); }
 .rive{ background-image: url("icons/rive.svg"); }
 .sketch{ background-image: url("icons/sketch.svg"); }
