@@ -121,6 +121,18 @@
     "title": "Non-Digital works",
     "cards": [
       {
+        "href": "titanic/index.html",
+        "img": "titanic/product_thumbnail.jpg",
+        "alt": "Titanic wrapper for Skytrain",
+        "title": "Skytrain Wrapper",
+        "desc": "SkyTrain Promotional Wrap for Titanic Exhibition in Vancouver BC",
+        "slug": "titanic",
+        "hero": {
+          "src": "titanic/product_hero.jpg",
+          "alt": "SkyTrain Promotional Wrap for Titanic Exhibition in Vancouver BC"
+        }
+      },
+      {
         "href": "Heli-One/index.html",
         "img": "Heli-One/product_thumbnail.jpg",
         "alt": "Heli-One Template Redesign",
