@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en" class="preload">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Little Inkventure — Creative Social Media</title>
+
+    <!-- Critical: prevent FOUC; keep inline -->
+    <style>html.preload body { visibility: hidden; opacity: 0; }</style>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body id="woosh" style="--gt-color: var(--woosh);">
+    <!-- Landmark header (nav injected via JS) -->
+    <header id="site-header" role="banner"></header>
+
+    <main id="main" class="container">
+      <div class="content-wrapper">
+        <div class="grid max-width">
+          <!-- Intro -->
+          <section class="section introduction" aria-labelledby="title">
+            <h1 id="title">Woosh!</h1>
+            <p>“Woosh!” was born from a very real frustration: doing laundry in a shared condo building.</p>
+            <p>With over 50 units sharing a total of 4 machines, laundry day often turned into a waiting game of checking, rechecking, and hoping someone hadn’t taken (or touched) your clothes.</p>
+            <p>I wanted to explore how design could make this everyday experience less stressful, more transparent, and more respectful of privacy.</p>
+          </section>
+
+          <section class="section">
+            <h3>Background Story</h3>
+            <p>Before I began, I had a scenario from my own experience.</p>
+            <p>I’ve settled comfortably into my recliner, excited for the movie. The lights dim, the trailers roll — and suddenly, the smell of buttery popcorn hits me. Then comes the crunch of chips from behind me.</p>
+            <p><strong>Instant regret.</strong></p>
+            <p>I didn’t get snacks — and now I’m stuck in the middle of the row, torn between squeezing past everyone or trying to get over it.</p>
+            <p>That’s when I thought:</p>
+            <quote>“In daily life, we have apps like <strong>Uber Eats</strong> and <strong>SkipTheDishes</strong> that make getting food as simple as a tap on our phones. So why not bring that same convenience to the movie theatre?”</quote>
+            <!-- <p><img src="background-story.jpg" alt="" loading="lazy"></p> -->
+          </section>
+
+          <!-- Fact sheet -->
+          <section class="section section--two fact-sheet" aria-labelledby="facts">
+            <div class="gt-col">
+              <h4>Responsibilities</h4>
+              <ul>
+                  <li>UX Research</li>
+                  <li>User Interviews</li>
+                  <li>Concept Development</li>
+                  <li>Data Analysis</li>
+                  <li>Branding & UI Design</li>
+              </ul>
+            </div>
+            <div class="gt-col">
+              <h4>Tools</h4>
+              <ul class="tools">
+                  <li><img class="figma"></img>Figma</li>
+                  <li><img class="procreate"></img>Procreate</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section challenge" aria-labelledby="challenge">
+            <h2 id="challenge">Challenge: Convenience Shouldn’t Be Complicated</h2>
+            <p>
+              After chatting with a few friends and reading online research from forums, I discovered that while VIP theatres promise comfort, <strong>the in-seat dining experience was still old-fashioned and disruptive</strong>.
+            </p>
+            </section>
+
+            <section class="section">
+            <h3>Key pain points</h3>
+            <ul>
+                <li><strong>Guest Discomfort</strong> - Ordering food became awkward for seated guests, especially those in the middle of rows or with limited mobility. This discouraged spontaneous purchases and lowered overall concession sales, showing a clear need for a more seamless, in-seat solution.</li>
+                <li><strong>User Strain</strong> - Guests navigated tight aisles in dim lighting while carrying food and drinks — stressful and inconvenient.</li>
+                <li><strong>Skip the Line (or Lack Thereof)</strong> - Unlike other entertainment or dining experiences, there was no convenient way to <strong>order ahead or skip the concession line</strong>. This led to long queues before showtimes — often causing guests to miss previews or delay purchases altogether.</li>
+            </ul>
+            </section>
+
+            <section class="section">
+            <h3>Personas</h3>
+            <p>Based on research, I created <strong>two personas</strong> representing typical moviegoers — from busy professionals to parents with children.</p>
+            <p><img src="persona-david-1.jpg"></p>
+            <p><img src="persona-david-2.jpg"></p>
+            <p><img src="persona-melissa-1.jpg"></p>
+            <p><img src="persona-melissa-2.jpg"></p>
+            </section>
+
+            <section
+            class="section section--border-dash"
+            style="--gt-bg: var(--primary100);">
+              <div class="section__inner">
+                <h2>Goal Statement</h2>
+                <p>The <strong>MovieBitez food ordering app</strong> will let users order food in-theatre quickly and easily.</p>
+                <p>This benefits <strong>tired workers and parents</strong> by allowing them to stay seated, save time, and enjoy the movie while their food is handled.</p>
+                <p>Effectiveness will be measured by the <strong>number of food orders</strong> placed during testing.</p>
+              </div>
+            </section>
+
+            <section class="section">
+              <h3>Storyboard</h3>
+              <p>I created a storyboard that visualize the <strong>emotional journey</strong> of users — from deciding to order food to receiving it at their seats.</p>
+            </section>
+
+            <section class="section section--three media-display" aria-labelledby="gallery">
+            <!-- <h2 id="gallery" class="visually-hidden">Gallery</h2> -->
+              <div class="gt-col">
+                <img src="storyboard-1.JPG" alt="" loading="lazy">
+                <p class="small">1. David went to the movie theatre and sitting with poeple who got food. The smell got to him and he is now craving for some snacks as well.</p>
+              </div>
+              <div class="gt-col">
+                <img src="storyboard-2.JPG" alt="" loading="lazy">
+                <p class="small">2. However, he felt awkward to get out of his seats.</p>
+              </div>
+              <div class="gt-col">
+                <img src="storyboard-3.JPG" alt="" loading="lazy">
+                <p class="small">3. He didn't want to bother other people and worried about tripping and following in the dark.</p>
+              </div>
+              <div class="gt-col">
+                <img src="storyboard-4.JPG" alt="" loading="lazy">
+                <p class="small">4. David found MovieBitez and decided to give it a try. He placed an order and confirmed.</p>
+              </div>
+              <div class="gt-col">
+                <img src="storyboard-5.JPG" alt="" loading="lazy">
+                <p class="small">5. Food got delivered to David's seat.</p>
+              </div>
+              <div class="gt-col">
+                <img src="storyboard-6.JPG" alt="" loading="lazy">
+                <p class="small">6. David is glad that he didn't have to leave his seat.</p>
+              </div>
+            </section>
+
+            <section class="section">
+              <h3>User Flow</h3>
+              <p>I mapped the journey from <strong>confirming seats → placing an order → checkout</strong> to ensure a smooth, linear flow.</p>
+              <p><img src="user-flow.jpg"></p>
+            </section>
+
+            <section class="section">
+              <h3>Wireframes</h3>
+              <p>I first sketched rough wireframes to validate early ideas and gather feedback quickly.</p>
+              <p>With this prototype, I conducted UX research with five participants who regularly go to the movies and refined the flow based on their feedback.</p>
+            </section>
+
+            <section class="section section--four media-display" aria-labelledby="gallery">
+            <!-- <h2 id="gallery" class="visually-hidden">Gallery</h2> -->
+              <div class="gt-col">
+                <img src="version-1/Home.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-1/Home-1.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-1/Food Category.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-1/Add Ons Options.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-1/Cart Empty.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-1/Checkout.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-1/Payment.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-1/Thank you.jpg" alt="" loading="lazy">
+              </div>
+            </section>
+
+            <section class="section">
+              <h3>User Studies</h3>
+              <p>The user interviews took place online. Each participant interacted with the wireframe to place an order.</p>
+              <p>I evaluated usability based on task completion time, user errors, and expectations.</p>
+            </section>
+
+            <section class="section">
+              <h4>Testing Prompts</h4>
+              <p>I created 6 prompts to test the prototype:</p>
+              <ul>
+                <li><strong>Prompt 1:</strong> Browse through the app and try to look for "popcorn".</br>How easy or difficult was it to navigate through the different categories of food? Is there anything you would change about the categorization or the navigation?</li>
+                <li><strong>Prompt 2:</strong> Try to order an item and add extra toppings to it.</br>How easy or difficult was this task to complete? Is there anything you would change about the process of adding items to cart?</li>
+                <li><strong>Prompt 3:</strong> Try to edit item quantity.</br>How easy or difficult was editing the cart? Is there anything you would change?</li>
+                <li><strong>Prompt 4:</strong> Try setup for delivery/pickup.</br>How easy or difficult was it to set up for delivery or pickup? Is there anything you would change?</li>
+                <li><strong>Prompt 5:</strong> Select the credit card payment method</br>How easy or difficult was this task to complete?</li>
+                <li><strong>Prompt 6:</strong> Finally try to checkout and complete the order</br>How easy or difficult was this task to complete?</li>
+              </ul>
+            </section>
+
+            <section class="section">
+              <img src="themes.jpg" alt="" loading="lazy">
+            </section>
+
+            <section class="section">
+              <h3>Revised Wireframe & Key Features</h3>
+              <p>Based on insights, I enhanced the design to include:</p>
+              <ul>
+                <li><strong>Seat Confirmation Options</strong> Scan the QR code on the seat, scan movie tickets, or log in with the theatre’s app.</li>
+                <li><strong>Faster Editing & Ordering</strong> Edit quantity directly from cart or item page.</li>
+                <li><strong>Streamlined Menus</strong> Reduced text for quicker scanning and better visual hierarchy.</li>
+                <li><strong>More Payment Options</strong> Include credit cards, gift cards, and digital wallets.</li>
+                <li><strong>Confirmation Step</strong> Added a final “Confirm Order” page to reduce accidental submissions.</li>
+              </ul>
+            </section>
+
+            <section class="section section--four media-display" aria-labelledby="gallery">
+            <!-- <h2 id="gallery" class="visually-hidden">Gallery</h2> -->
+              <div class="gt-col">
+                <img src="version-2/Scan Seat.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-2/Home.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-2/Popcorn.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-2/Fountain Drinks.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-2/Checkout.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-2/Payment.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-2/Thank you.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-2/Home with Timer.jpg" alt="" loading="lazy">
+              </div>
+            </section>
+
+          <!-- Insight -->
+          <section
+            class="section section--border-dash insight"
+            aria-labelledby="insight"
+            style="--gt-bg: var(--primary100);"
+          >
+            <div class="section__inner">
+                <h2 id="insight">💡 Insight: Bringing Convenience to a Shared, Silent Experience</h2>
+                <p>
+                 We already have <strong>Uber Eats, SkipTheDishes, and DoorDash</strong> for everyday food delivery — designed for users who are actively engaging with their devices in open, social environments.
+                </p>
+                <p>But a movie theatre is completely different.</p>
+                <p>It’s a closed, quiet space where every sound, every light, and every distraction matters.</p>
+                <p>Guests want <strong>convenience without interruption.</strong></p>
+                <p>Staff want <strong>efficiency without friction.</strong></p>
+                <quote>“Unlike food delivery apps, MovieBitez isn’t about more food — it’s about better flow.”</quote>
+                <p><img src="MovieBITEZvsOtherAPPS.jpg" alt=""></p>
+            </div>
+          </section>
+
+            <section class="section">
+              <h2>Branding & Design System</h2>
+              <p>The name <strong>MovieBitez</strong> merges the worlds of theatre and indulgence, reflecting both function and delight.</p>
+            </section>
+
+            <section class="section section--two media-display" aria-labelledby="gallery">
+            <!-- <h2 id="gallery" class="visually-hidden">Gallery</h2> -->
+              <div class="gt-col">
+                <img src="version-2/logo.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-2/logo-1.jpg" alt="" loading="lazy">
+              </div>
+            </section>
+
+            <section class="section">
+              <h3>Colors</h3>
+              <p>I designed the app using a dark theme to accommodate the low-light environment of a theatre. This approach helps reduce eye strain and minimizes screen brightness, allowing users to browse and order without disrupting others around them.</p>
+              <p>The color palette combines deep navy blues — echoing the glow of a theatre screen — with a warm gold accent that evokes a sense of leisure, comfort, and subtle luxury. Together, they create a balanced visual experience that feels both immersive and elegant, perfectly suited for a cinematic atmosphere.</p>
+              <img src="version-2/color.jpg" alt="" loading="lazy">
+            </section>
+
+            <section class="section">
+              <h3>Typography:</h3>
+              <p>To maintain visual clarity and consistency, I limited the typography to five variations across the entire app. The type hierarchy was designed to balance readability and hierarchy in a dark environment:</p>
+              <ul>
+                <li>Large, bold headers guide users quickly through key sections like Menu, Combos, and My Orders.</li>
+                <li>Medium-weight subheaders distinguish food categories and pricing for effortless scanning.</li>
+                <li>Body text remains legible at smaller sizes, using high contrast for accessibility.</li>
+                <li>Buttons and labels use concise, sentence-style text for clarity and ease of interaction.</li>
+              </ul>
+              <img src="version-2/typography.jpg" alt="" loading="lazy">
+            </section>
+
+            <section class="section">
+              <h3>Components</h3>
+              <p>I created a set of reusable components that could easily adapt across the app.</p>
+              <p>I also defined key interaction states — Enabled, Hover, Pressed, and Disabled — to provide clear visual feedback and improve the overall user experience.</p>
+              <p>I also included a range of cards and modal variations to support different functions within the app, featuring item images, names, and prices for quick recognition.</p>
+              <p>These standardized elements not only improved design consistency but also made development and future updates more scalable.</p>
+              <img src="version-2/components.jpg" alt="" loading="lazy">
+            </section>
+
+            <section class="section section--four media-display" aria-labelledby="gallery">
+            <h2 id="gallery" class="visually-hidden">High Fidelity Wireframe</h2>
+              <div class="gt-col">
+                <img src="version-3/Scan Seat.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-3/Home.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-3/Popcorn.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-3/Fountain Drinks.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-3/Checkout.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-3/Payment.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-3/Thank you.jpg" alt="" loading="lazy">
+              </div>
+              <div class="gt-col">
+                <img src="version-3/Home with Timer.jpg" alt="" loading="lazy">
+              </div>
+            </section>
+
+          <!-- Lessons -->
+          <section class="section section--bg" aria-labelledby="lessons-learned" style="--gt-bg: var(--moviebitez); --gt-color: var(--white100);">
+            <div class="section__inner">
+              <h2 id="lessons-learned">Lessons Learned</h2>
+              <p>MovieBitez showed me that <strong>innovation isn’t always about invention</strong> — sometimes it’s about <strong>adapting convenience to context</strong>.</p>
+              <p><i>It’s not “Uber Eats for theatres.”</i></p>
+              <p> It’s about designing <strong>a seamless, silent experience</strong> that enhances comfort and keeps users immersed in the moment.</p>
+              <p>Because sometimes, the best UX is the one that lets you stay fully in the moment — popcorn smell and all. 🍿</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Project nav injected via JS -->
+    <nav class="project-nav" aria-label="Project navigation"></nav>
+
+    <!-- Templates -->
+    <template id="hero-template">
+      <div class="product-hero">
+        <img src="" alt="" />
+      </div>
+    </template>
+
+    <!-- Core scripts -->
+    <script src="../site.js" defer></script>
+    <script src="../projects.js" defer data-json="../projects.json" data-base-path="../"></script>
+    <script defer>
+      // Initialize after DOM is parsed
+      document.addEventListener('DOMContentLoaded', () => {
+        Site.Head.init({ basePath: "../" });
+        Site.Nav.init({ basePath: "../" });
+        Site.Footer.init();
+        Site.ProjectNav.init({
+          container: ".project-nav",
+          jsonPath: "../projects.json",
+          basePath: "../",
+          scope: "all", // or "section" to limit to same section
+          loop: true,
+        });
+      });
+    </script>
+
+    <noscript>
+      <style>html.preload body { visibility: visible; opacity: 1; }</style>
+    </noscript>
+  </body>
+</html>
