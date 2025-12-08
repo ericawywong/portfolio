@@ -77,7 +77,7 @@
             <ul>
   
               <li><a class="instagram" href="https://www.instagram.com/littleinkventure/" target="_blank" rel="noopener noreferrer"></a></li>
-              <li><a class="email" href="mailto:ericawyw@gmail.com"></a></li>
+              <li><a class="email" href="mailto:ericawyw.design@gmail.com"></a></li>
             </ul>
             <button class="menu-icon" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
           </div>
