@@ -1,6 +1,6 @@
 [
   {
-    "title": "UX & Visual Design",
+    "title": "",
     "cards": [
       {
         "href": "moviebitez/index.html",
@@ -8,6 +8,7 @@
         "alt": "Movie BITEZ",
         "title": "Movie BITEZ",
         "desc": "Mobile App concept allowing users order food in movie theatre.",
+        "type": ["UX", "UI"],
         "slug": "moviebitez",
         "hero": {
           "src": "moviebitez/product_hero.jpg",
@@ -20,6 +21,7 @@
         "alt": "",
         "title": "POG",
         "desc": "Internal SaaS management tool",
+        "type": ["SaaS", "UX", "UI"],
         "slug": "pog",
         "hero": {
           "src": "POG/product_hero.jpg",
@@ -32,6 +34,7 @@
         "alt": "Just10 – A Social Network for Closer, Safer Connections",
         "title": "Just10",
         "desc": "A Social Network for Closer, Safer Connections",
+        "type": ["B2C", "UI"],
         "slug": "just10",
         "hero": {
           "src": "just10/product_hero.jpg",
@@ -44,6 +47,7 @@
         "alt": "Best Buy - Streamlining Design Handoff",
         "title": "Best Buy",
         "desc": "Streamlining Design Handoff",
+        "type": ["Process"],
         "slug": "bestbuy-process",
         "hero": {
           "src": "bestbuy/product_hero_design_process.jpg",
@@ -56,23 +60,33 @@
         "alt": "Best Buy",
         "title": "Best Buy",
         "desc": "Responsive Redesign of Best Buy E-Newsletters",
+        "type": ["B2C", "UI", "Email Design"],
         "slug": "bestbuy-enewsletter",
         "hero": {
           "src": "bestbuy/product_hero_enewsletter.jpg",
           "alt": "Best Buy Responsive Redesign of Best Buy E-Newsletters"
         }
-      }
-    ]
-  },
-  {
-    "title": "Illustrations",
-    "cards": [
+      },
+      {
+        "href": "bigbarnworld/index.html",
+        "img": "bigbarnworld/product_thumbnail.jpg",
+        "alt": "Big Barn World - Character Collectibles",
+        "title": "Big Barn World",
+        "desc": "Character Collectibles",
+        "type": ["B2C","UI","Illustrations"],
+        "slug": "bigbarnworld",
+        "hero": {
+          "src": "bigbarnworld/product_hero.jpg",
+          "alt": "Big Barn World - Character Collectibles"
+        }
+      },
       {
         "href": "LittleInkventure/index.html",
         "img": "LittleInkventure/product_thumbnail.jpg",
         "alt": "Little Inkventure - Personal project & social media content management",
         "title": "Little Inkventure",
         "desc": "Personal project & social media content management",
+        "type": ["Illustrations", "Digital Marketing"],
         "slug": "LittleInkventure",
         "hero": {
           "src": "LittleInkventure/product_hero.jpg",
@@ -85,22 +99,11 @@
         "alt": "PacFrens - NFT Collectibles",
         "title": "PacFrens",
         "desc": "NFT Collectibles",
+        "type": ["Illustrations"],
         "slug": "pacfrens",
         "hero": {
           "src": "PacFrens/product_hero.gif",
           "alt": "PacFrens - NFT Collectibles"
-        }
-      },
-      {
-        "href": "bigbarnworld/index.html",
-        "img": "bigbarnworld/product_thumbnail.jpg",
-        "alt": "Big Barn World - Character Collectibles",
-        "title": "Big Barn World",
-        "desc": "Character Collectibles",
-        "slug": "bigbarnworld",
-        "hero": {
-          "src": "bigbarnworld/product_hero.jpg",
-          "alt": "Big Barn World - Character Collectibles"
         }
       }
     ]
@@ -113,11 +116,12 @@
         "img": "titanic/product_thumbnail.jpg",
         "alt": "Titanic wrapper for Skytrain",
         "title": "Skytrain Wrapper",
-        "desc": "SkyTrain Promotional Wrap for Titanic Exhibition in Vancouver BC",
+        "desc": "SkyTrain Promotional Wrap for Titanic Exhibition",
+        "type": ["Print Design"],
         "slug": "titanic",
         "hero": {
           "src": "titanic/product_hero.jpg",
-          "alt": "SkyTrain Promotional Wrap for Titanic Exhibition in Vancouver BC"
+          "alt": "SkyTrain Promotional Wrap for Titanic Exhibition"
         }
       },
       {
@@ -126,6 +130,7 @@
         "alt": "Heli-One Template Redesign",
         "title": "Heli-One",
         "desc": "Helicopter services company's print template redesign",
+        "type": ["Print Design"],
         "slug": "helione",
         "hero": {
           "src": "Heli-One/product_hero.jpg",

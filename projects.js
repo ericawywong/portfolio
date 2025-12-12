@@ -90,10 +90,14 @@ Usage:
     const frag = document.createDocumentFragment();
 
     for (const section of sections) {
-      // Heading
-      const headNode = tplHead.content.cloneNode(true);
-      headNode.querySelector("h2").textContent = section.title || "";
-      frag.appendChild(headNode);
+      // Heading (only if section.title is non-empty)
+      const titleText = typeof section.title === "string" ? section.title.trim() : "";
+      if (titleText) {
+        const headNode = tplHead.content.cloneNode(true);
+        const heading = headNode.querySelector("h2") || headNode.querySelector("h1");
+        if (heading) heading.textContent = titleText;
+        frag.appendChild(headNode);
+      }
 
       // Cards
       for (const c of section.cards || []) {
@@ -103,6 +107,7 @@ Usage:
         const img = node.querySelector("img");
         const h3  = node.querySelector("h3");
         const p   = node.querySelector("p");
+        const span = node.querySelector("span");
 
         if (c.classes) wrapper.className = c.classes;
         if (c.slug) wrapper.classList.add(normalize(c.slug));
@@ -111,6 +116,27 @@ Usage:
         buildImg(img, c.img, c.alt, { width: c.width, height: c.height });
         h3.textContent = c.title || "";
         p.textContent  = c.desc  || "";
+
+        // Support "type" as string or array -> multiple <span> pills
+        if (span) {
+          const parent = span.parentNode;
+
+          if (Array.isArray(c.type)) {
+            // First pill reuses the existing <span>
+            span.textContent = c.type[0] || "";
+
+            // Additional pills are clones, inserted before <h3>
+            for (let i = 1; i < c.type.length; i++) {
+              const clone = span.cloneNode(true);
+              clone.textContent = c.type[i] || "";
+              parent.insertBefore(clone, h3);
+            }
+          } else if (typeof c.type === "string" && c.type.trim() !== "") {
+            span.textContent = c.type;
+          } else {
+            span.textContent = "";
+          }
+        }
 
         frag.appendChild(node);
       }
