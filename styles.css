@@ -294,6 +294,7 @@ nav .nav-container .menu-icon { display: none; cursor: pointer; }
 .project-nav .nav-container a {
   inline-size: auto;
   block-size: auto;
+  background: transparent;
 }
 .project-nav .nav-container a p { margin: 0; padding: 0; }
 .project-nav .project-nav__thumb { display: none; object-fit: cover; }
