@@ -74,7 +74,7 @@
    Icon classes (background images)
    =============================== */
 
-.logo{ background-image: url(ericawong.svg); }
+.logo{ background-image: url(ericawong.svg); background-color: var(--primary100);}
 .email{ background-image: url(email.svg); }
 .about-me{ background-image: url(about-me.svg); }
 .instagram{ background-image: url(instagram.svg); }
@@ -202,7 +202,7 @@ ul {
 a {
   color: var(--grey10);
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 600;
   transition: var(--transition);
   border-radius: var(--border-circle);
   background-color: var(--grey80);
@@ -213,35 +213,29 @@ a:hover {
   box-shadow: var(--box-shadow);
   background-color: var(--primary100);
 }
-.card a {
-  color: var(--grey20);
-  text-decoration: none;
-  font-weight: 300;
-  transition: var(--transition);
+a:has(img) {
+  border-radius: var(--border-radius);
   background: transparent;
   padding-block: 0;
   padding-inline: 0;
 }
-.card a:hover {
-  background-color: var(--primary100);
-  box-shadow: var(--box-shadow);
-  color: var(--grey10);
-  border-radius: var(--border-circle);
-  padding-block: var(--gap-xs);
-  padding-inline: var(--gap-sm);
-}
-.card a:has(img) img {
+a:has(img) img {
   transition: var(--transition);
 }
-.card a:has(img):hover {
-  border-radius: var(--border-radius);
+a:has(img):hover {
   box-shadow: none;
-  padding:0;
 }
-.card a:has(img):hover img {
-  border-radius: var(--border-radius);
+a:has(img):hover img {
   box-shadow: var(--box-shadow-media);
-  padding:0;
+  background-color: var(--primary100);
+}
+a:has(span):hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+a:has(img) p {
+  font-weight: 400;
+  color: var(--grey30);
 }
 
 /* ===============================
@@ -277,7 +271,7 @@ nav .nav-container a {
   block-size: 2.85rem;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 2.25rem 2.25rem;
   border-radius: var(--border-circle);
 }
 nav .nav-container .menu-icon { display: none; cursor: pointer; }
@@ -405,9 +399,6 @@ footer .copyright {
   padding-right: var(--gap-sm);
   border-radius: var(--border-radius);
   margin-right: var(--gap-xs);
-}
-.section.card a:hover {
-  background-color: transparent;
 }
 
 /* Product Hero Image */
