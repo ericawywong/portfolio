@@ -399,7 +399,7 @@ footer .copyright {
   background: var(--grey70);
   color: var(--grey10);
   font-size: var(--gap-sm);
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: var(--gap-xs);
   padding-left: var(--gap-sm);
   padding-right: var(--gap-sm);
