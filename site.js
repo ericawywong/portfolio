@@ -75,7 +75,6 @@
           </div>
           <div class="nav-container remove-padding-left">
             <ul>
-  
               <li><a class="instagram" href="https://www.instagram.com/littleinkventure/" target="_blank" rel="noopener noreferrer"></a></li>
               <li><a class="email" href="mailto:ericawyw@gmail.com"></a></li>
             </ul>
