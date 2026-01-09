@@ -22,7 +22,7 @@
     />
 
     <!-- Site CSS -->
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Erica — Product Designer</title>
   </head>
   <body id="portfolio">
@@ -35,24 +35,10 @@
           <section class="section profile" aria-labelledby="intro-title">
             <div>
               <h1 id="intro-title">
-                <span aria-hidden="true">👋🏻</span> I’m Erica, <br />a UI/UX Designer.
+               Hi, I’m <span>Erica</span>, a <span>UX/UI</span> designer.
               </h1>
               <p>
-                Experienced in front-end coding 👩🏻‍💻; I craft human-centered journeys infused with
-                <span>
-                  engaging visuals
-                  <canvas id="Rainbow" style="width: 32px; height: 32px; vertical-align:text-top;">
-                    Rainbow animation
-                  </canvas>
-                </span>
-                &
-                <span>
-                  empathy
-                  <canvas
-                    id="Emoji" style="width: 32px; height: 32px; vertical-align:text-top;">
-                    Smiling emoji animation
-                  </canvas>
-                </span>
+                I design purpose-driven, human-centered digital experiences that strengthen relationships between businesses and people.
               </p>
             </div>
           </section>
@@ -93,40 +79,6 @@
         Site.Head.init({ basePath: "" });
         Site.Nav.init({ basePath: "" });
         Site.Footer.init();
-      });
-    </script>
-
-    <!-- Rive (separate for caching) -->
-    <script src="https://unpkg.com/@rive-app/canvas@2.24.0" defer></script>
-    <script defer>
-      // Mount Rive animations if available
-      window.addEventListener('DOMContentLoaded', () => {
-        if (!window.rive) return;
-
-        const rainbowCanvas = document.getElementById('Rainbow');
-        const emojiCanvas = document.getElementById('Emoji');
-
-        if (rainbowCanvas) {
-          const rainbow = new rive.Rive({
-            src: 'index.riv',
-            canvas: rainbowCanvas,
-            autoplay: true,
-            artboard: 'Rainbow',
-            stateMachines: 'StateMachine1',
-            onLoad: () => rainbow.resizeDrawingSurfaceToCanvas(),
-          });
-        }
-
-        if (emojiCanvas) {
-          const emoji = new rive.Rive({
-            src: 'index.riv',
-            canvas: emojiCanvas,
-            autoplay: true,
-            artboard: 'Emoji',
-            stateMachines: 'StateMachine2',
-            onLoad: () => emoji.resizeDrawingSurfaceToCanvas(),
-          });
-        }
       });
     </script>
 

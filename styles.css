@@ -157,10 +157,10 @@ h1 {
   font-weight: 800;
   margin-block-end: var(--gap-xl);
 
-  text-decoration-line: underline;
+  /* text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: var(--primary100);
-  text-decoration-thickness: 0.46rem;
+  text-decoration-thickness: 0.46rem; */
   color: var(--gt-color);
 }
 
@@ -343,21 +343,28 @@ footer .copyright {
 .section.profile { grid-column: 1/-1; }
 .section.profile div { width:100%;}
 .profile h1 {
-  font-size: clamp(3.6rem, 5vw, 4.2rem);
-  font-weight: 800;
+  font-size: clamp(3.6rem, 14vw, 5.3rem);
+  font-weight: 600;
   line-height: 1.15;
   margin-block-end: var(--gap-xl);
 }
 .profile span {
   font-weight: 600;
-  background-color: var(--primary100);
+  /* display: inline; */
+  /* background-color: var(--primary100);
   box-shadow: var(--box-shadow);
   padding: 0.111rem 0.778rem;
   border-radius: 1.389rem;
   white-space: nowrap;
-  margin-right: 1rem;
+  margin-right: 1rem; */
 }
-.profile h1 span { display: block; background: none; box-shadow: none;}
+.profile h1 span { 
+  font-weight: 800; 
+  color: var(--primary100);
+  /* display: block;  */
+  /* background: none; 
+  box-shadow: none; */
+}
 .profile p {
   font-size: clamp(1.5rem, 1.2vw + 0.9rem, 2.33rem);
   line-height: clamp(1.5, 1vw + 1.2, 1.85);
@@ -608,11 +615,11 @@ strong {
 
 @media (min-width: 768px) {
   .section.card div { grid-column: span 4; }
-  .section.profile div { width:80%; margin: auto;}
+  /* .section.profile div { width:80%; margin: auto;} */
 }
 
 @media (min-width: 1024px) {  /*L*/
-.section.profile div { width:72%; margin: auto;}
+/* .section.profile div { width:72%; margin: auto;} */
 }
 
 @media (min-width: 1280px) {  /*xL*/
